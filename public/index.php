@@ -1,4 +1,4 @@
 <?php
 require_once "../config/config.php";
 
-require "../controller/checkpages.php";
+require_once "../view/public/canva.php";
