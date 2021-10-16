@@ -1,5 +1,5 @@
 <?php
 ?>
 <main>
-    <h1>3</h1>
+    <h1>Contact</h1>
 </main>
