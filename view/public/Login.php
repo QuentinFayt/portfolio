@@ -1,5 +1,5 @@
 <?php
 ?>
 <main>
-    <h1>2</h1>
+    <h1>Login</h1>
 </main>
