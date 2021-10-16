@@ -1,0 +1,2 @@
+<?php
+define("WHITE_LIST", ["homepage", "Accueil", "CV", "Galerie", "Tutoriels", "Liens", "Contact", "Login"]);

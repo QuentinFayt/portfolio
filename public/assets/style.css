@@ -1,0 +1,104 @@
+/*============================Inititialisation============================*/
+html * {
+  box-sizing: border-box;
+  background-color: var(--B_background);
+  color: white;
+  font-family: "Noto Sans Mono", monospace;
+}
+:root {
+  --B_background: #333;
+  --T_background: #555;
+  --BS_color: #4b4b4b;
+  --M_color: #0f9;
+}
+body {
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "foot";
+  gap: 10px;
+}
+/*============================Nav============================*/
+nav {
+  display: grid;
+  grid-template-columns: 12.5% 67.5% 20%;
+  border-bottom: 1px solid var(--M_color);
+}
+nav div svg {
+  height: 50px;
+}
+nav div {
+  border-right: 1px solid var(--M_color);
+}
+nav div svg {
+  float: left;
+  margin: 0 1vw;
+}
+nav div p {
+  margin: 0;
+  font-weight: 700;
+  line-height: 50px;
+}
+.first_links,
+.second_links {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+.first_links {
+  width: 90%;
+}
+.second_links {
+  width: 100%;
+  border-left: 1px solid var(--M_color);
+}
+.first_links li,
+.second_links li {
+  float: left;
+  list-style: none;
+}
+.first_links li {
+  width: 20%;
+}
+.second_links li {
+  width: 50%;
+}
+.first_links li a,
+.second_links li a {
+  display: block;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+#login {
+  background-color: var(--M_color);
+  color: black;
+}
+.first_links li a:hover,
+.second_links li a:hover {
+  background-color: var(--M_color);
+  color: black;
+}
+#login:hover {
+  background-color: var(--B_background);
+  color: white;
+}
+main {
+  grid-area: main;
+  height: 840px;
+}
+/*============================Foot============================*/
+footer {
+  grid-area: foot;
+  border-top: 3px solid var(--T_background);
+  width: 100%;
+}
+footer p {
+  margin: 0;
+  float: right;
+  margin-right: 20px;
+}
