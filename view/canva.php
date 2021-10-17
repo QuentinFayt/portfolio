@@ -10,6 +10,7 @@
     <?php
     include_once "./assets/fonts/fonts.php";
     ?>
+    <link rel="icon" href="./assets/img/logo.ico" />
     <link href="./assets/style.css" rel="stylesheet" />
     <title>
         PortFolio |
@@ -29,7 +30,15 @@
     require "../controller/checkPages.php";
     ?>
     <footer>
-        <p>Réalisé par Quentin Fayt | 2021</p>
+        <a href="https://github.com/QuentinFayt">
+            <img class="foot_log" src="./assets/img/github.png" alt="github" />
+            <p>Github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/quentin-fayt-6714b9174/">
+            <img class="foot_log" src="./assets/img/linkedin.png" alt="linkedin" />
+            <p>Linkedin</p>
+        </a>
+        <p class="right">Réalisé par Quentin Fayt | 2021</p>
     </footer>
     <script src="./assets/script.js"></script>
 </body>

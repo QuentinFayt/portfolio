@@ -1,7 +1,6 @@
 /*============================Inititialisation============================*/
 html * {
   box-sizing: border-box;
-  background-color: var(--B_background);
   color: white;
   font-family: "Noto Sans Mono", monospace;
 }
@@ -12,6 +11,7 @@ html * {
   --M_color: #0f9;
 }
 body {
+  background-color: var(--B_background);
   margin: 0;
 }
 body {
@@ -41,16 +41,17 @@ nav div svg {
 nav div p {
   margin: 0;
   font-weight: 700;
+  font-size: 1vw;
   line-height: 50px;
 }
 .first_links,
 .second_links {
-  display: block;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 .first_links {
   width: 90%;
+  margin: 0 auto;
 }
 .second_links {
   width: 100%;
@@ -73,6 +74,7 @@ nav div p {
   line-height: 50px;
   text-decoration: none;
   text-align: center;
+  font-size: 1vw;
 }
 #login {
   background-color: var(--M_color);
@@ -87,18 +89,59 @@ nav div p {
   background-color: var(--B_background);
   color: white;
 }
-main {
-  grid-area: main;
-  height: 840px;
-}
 /*============================Foot============================*/
 footer {
   grid-area: foot;
   border-top: 3px solid var(--T_background);
   width: 100%;
 }
-footer p {
+.right {
   margin: 0;
   float: right;
   margin-right: 20px;
+}
+.foot_log {
+  height: 20px;
+  float: left;
+}
+footer p {
+  float: left;
+  margin: 0 1em 0 0.5em;
+}
+/*============================Main============================*/
+/*===============Commun===============*/
+main {
+  grid-area: main;
+  margin: 2em;
+  margin-bottom: 1em;
+}
+main h1 {
+  font-size: 3vw;
+  margin: 0;
+}
+main p {
+  margin: 1em;
+  font-size: 1vw;
+}
+/*===============homepage===============*/
+.svg svg {
+  width: 100px;
+  height: 120px;
+}
+.homepage {
+  background-color: var(--T_background);
+  box-shadow: 20px 20px var(--BS_color);
+  padding: 1em;
+  margin: 2em 20px 2em 0;
+}
+.circle {
+  width: 20vw;
+  background-image: url("./img/moi.jpg");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 10px -70px;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  margin: 0 2em;
+  float: right;
 }
