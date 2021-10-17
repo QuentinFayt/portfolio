@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <img src="./assets/img/burger.png" alt="burger" class="burger" onclick="toggle()" />
     <?php
     if (isset($_SESSION)) {
     } else {
@@ -31,14 +32,14 @@
     ?>
     <footer>
         <a href="https://github.com/QuentinFayt">
-            <img class="foot_log" src="./assets/img/github.png" alt="github" />
+            <img class="foot_log mobile1" src="./assets/img/github.png" alt="github" />
             <p>Github</p>
         </a>
         <a href="https://www.linkedin.com/in/quentin-fayt-6714b9174/">
-            <img class="foot_log" src="./assets/img/linkedin.png" alt="linkedin" />
+            <img class="foot_log mobile2" src="./assets/img/linkedin.png" alt="linkedin" />
             <p>Linkedin</p>
         </a>
-        <p class="right">Réalisé par Quentin Fayt | 2021</p>
+        <p class="right mobile3">Réalisé par Quentin Fayt | 2021</p>
     </footer>
     <script src="./assets/script.js"></script>
 </body>
