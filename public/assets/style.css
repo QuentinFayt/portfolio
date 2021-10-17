@@ -75,6 +75,7 @@ nav div p {
 .first_links li a,
 .second_links li a {
   display: block;
+  height: 50px;
   line-height: 50px;
   text-decoration: none;
   text-align: center;
