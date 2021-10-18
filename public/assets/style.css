@@ -229,8 +229,9 @@ form div textarea {
   /*============================Nav============================*/
   nav {
     width: 30vw;
+    height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 5fr 2fr;
+    grid-template-rows: 4.5fr 5fr 2fr;
     position: fixed;
     left: -31vw;
     background-color: var(--T_background);
