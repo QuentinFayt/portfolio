@@ -161,6 +161,36 @@ main p {
 }
 /*===============Contact===============*/
 
+form {
+  width: 50vw;
+  padding: 1vw;
+  margin: 1vw auto;
+  background-color: var(--T_background);
+  box-shadow: 20px 20px var(--BS_color);
+}
+form div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1vw;
+}
+form div label {
+  text-align: center;
+  flex: 1;
+}
+form div input,
+form div textarea {
+  flex: 3;
+  color: black;
+}
+form div textarea {
+  height: 30vh;
+  resize: none;
+}
+.button {
+  cursor: pointer;
+  width: 30vw;
+  margin: 1vw auto;
+}
 /*============================801px To 1280px============================*/
 @media screen and (min-width: 801px) and (max-width: 1280px) {
   /*============================Nav============================*/
@@ -181,12 +211,17 @@ main p {
   .second_links li a {
     font-size: 2vw;
   }
+  /*============================Main============================*/
   /*===============homepage===============*/
   .circle {
     background-position: 5px -40px;
   }
   .homepage p {
     font-size: 1.5vw;
+  }
+  /*===============Contact===============*/
+  form {
+    width: 80vw;
   }
 }
 /*============================Up To 800px============================*/
@@ -259,32 +294,7 @@ main p {
   main {
     margin: 0;
   }
-  .homepage {
-    box-shadow: none;
-    margin: 0 auto;
-    width: 90vw;
-  }
-  main h1 {
-    font-size: 10vw;
-    text-align: center;
-  }
-  .circle {
-    display: none;
-  }
-  .circleM {
-    display: block;
-    width: 30vw;
-    background-image: url("./img/moi.jpg");
-    background-repeat: no-repeat;
-    background-size: 95%;
-    background-position: 1vw -7vw;
-    border-radius: 50%;
-    shape-outside: circle(50%);
-    margin: 2em auto;
-  }
-  .homepage p {
-    font-size: 2vw;
-  }
+  /*============================Foot============================*/
   footer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -324,6 +334,43 @@ main p {
   .foot_log {
     margin: 10px 8vw;
   }
+  /*============================Main============================*/
+  /*===============homepage===============*/
+  .homepage {
+    box-shadow: none;
+    margin: 0 auto;
+    width: 90vw;
+  }
+  main h1 {
+    font-size: 10vw;
+    text-align: center;
+  }
+  .circle {
+    display: none;
+  }
+  .circleM {
+    display: block;
+    width: 30vw;
+    background-image: url("./img/moi.jpg");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: 1vw -7vw;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    margin: 2em auto;
+  }
+  .homepage p {
+    font-size: 2vw;
+  }
+  /*===============Contact===============*/
+  form {
+    box-shadow: none;
+    width: 100vw;
+    height: 80vh;
+  }
+  form div {
+    margin: 5vh 5vw;
+  }
   @media screen and (max-width: 400px) {
     .homepage p {
       font-size: 3vw;
@@ -339,6 +386,9 @@ main p {
       nav {
         width: 50vw;
         left: -51vw;
+      }
+      form {
+        font-size: 5vw;
       }
     }
   }
