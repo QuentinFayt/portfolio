@@ -58,7 +58,7 @@ Cela permettra, plus tard, après identification, via un CRUD, d'ajouter/modifie
 
 ## CV
 
-Section en construction. Elle sera finalisée plus tard dans l’année avec les cours de Corinne.Il faut `juste la prévoir` dans l'architecture du site et dans le menu de navigation.
+Section en construction. Elle sera finalisée plus tard dans l’année avec les cours de Corinne. Il faut `juste la prévoir` dans l'architecture du site et dans le menu de navigation.
 
 ## Thèmes des tutoriels
 
