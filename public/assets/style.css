@@ -162,7 +162,19 @@ main p {
   float: right;
 }
 /*===============Contact===============*/
-
+.contact {
+  height: 28vh;
+  line-height: 28vh;
+}
+.contactImg {
+  display: none;
+}
+.mail {
+  position: absolute;
+  right: 5vw;
+  top: 80px;
+  width: 15vw;
+}
 form {
   width: 50vw;
   padding: 1vw;
@@ -225,6 +237,16 @@ form div textarea {
   form {
     width: 80vw;
   }
+  .contactImg {
+    width: 15vw;
+    display: block;
+    position: absolute;
+    right: 5vw;
+    top: 80px;
+  }
+  .mail {
+    display: none;
+  }
 }
 /*============================Up To 800px============================*/
 @media screen and (max-width: 800px) {
@@ -266,10 +288,17 @@ form div textarea {
   .second_links li a {
     background-color: var(--M_color);
     color: black;
+    height: 100%;
   }
   .first_links li,
   .second_links li {
     border: 3px solid white;
+  }
+  .first_links li {
+    height: calc(100% / 5);
+  }
+  .second_links li {
+    height: calc(100% / 2);
   }
   nav div svg {
     display: block;
@@ -366,6 +395,18 @@ form div textarea {
     font-size: 2vw;
   }
   /*===============Contact===============*/
+  .contact {
+    height: unset;
+    line-height: unset;
+  }
+  .mail {
+    display: none;
+  }
+  .contactImg {
+    display: block;
+    width: 30vw;
+    margin: 2em auto;
+  }
   form {
     box-shadow: none;
     width: 100vw;
