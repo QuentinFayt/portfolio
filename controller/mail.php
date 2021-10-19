@@ -1,17 +1,22 @@
 <?php
 if ($_POST) {
+    $pseudo =  htmlspecialchars(strip_tags(trim($_POST["user_name"])));
+    $mail =  htmlspecialchars(strip_tags(trim($_POST["user_mail"])));
+    $message =  htmlspecialchars(strip_tags(trim($_POST["user_message"])));
+
+
     $toDev      = MAIL;
-    $subjectDev = "Message de " . $_POST["user_name"] . " | Portfolio";
-    $messageDev = "Mail de l'utilisateur : " . $_POST["user_mail"] . "\n" . $_POST["user_message"];
+    $subjectDev = "Message de " . $pseudo . " | Portfolio";
+    $messageDev = "Mail de l'utilisateur : " . $mail . "\n" . $message;
     $headersToDev =
         'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
-        'From: ' . $_POST["user_mail"] . "\r\n" .
-        'Reply-To: ' . $_POST["user_mail"] . "\r\n" .
+        'From: ' . $mail  . "\r\n" .
+        'Reply-To: ' . $mail  . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    $toUsers = $_POST["user_mail"];
+    $toUsers = $mail;
     $subjectUsers = "Quentin Fayt | Portfolio";
-    $messageUsers = "Merci pour votre message!\nJe vous recontacte dans les plus brefs délais!\nBien à vous,\nQuentin Fayt";
+    $messageUsers = "Merci $subjectDev pour votre message!\nJe vous recontacte dans les plus brefs délais!\nBien à vous,\nQuentin Fayt";
     $headersToUsers =
         'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
         'From: ' . MAIL . "\r\n" .
