@@ -96,9 +96,11 @@ nav div p {
 }
 .burger {
   position: fixed;
-  left: 3vw;
-  top: 3vh;
+  left: 1vw;
+  top: 1vh;
   display: none;
+  width: 8vw;
+  height: 8vw;
 }
 /*============================Foot============================*/
 footer {
@@ -379,6 +381,10 @@ form div textarea {
     nav {
       width: 40vw;
       left: -41vw;
+    }
+    .burger {
+      top: 3vw;
+      left: 3vw;
     }
     @media screen and (max-width: 350px) {
       .homepage p {
