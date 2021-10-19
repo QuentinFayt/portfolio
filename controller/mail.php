@@ -16,7 +16,7 @@ if ($_POST) {
 
     $toUsers = $mail;
     $subjectUsers = "Quentin Fayt | Portfolio";
-    $messageUsers = "Merci $subjectDev pour votre message!\nJe vous recontacte dans les plus brefs délais!\nBien à vous,\nQuentin Fayt";
+    $messageUsers = "Merci $pseudo pour votre message!\nJe vous recontacte dans les plus brefs délais!\nBien à vous,\nQuentin Fayt";
     $headersToUsers =
         'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
         'From: ' . MAIL . "\r\n" .
