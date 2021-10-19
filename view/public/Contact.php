@@ -1,7 +1,13 @@
 <?php
 ?>
 <main>
-    <h1>Contact</h1>
+    <label for="message">
+        <video muted loop class="mail">
+            <source src="./assets/img/mail.mp4" type="video/mp4">
+        </video>
+    </label>
+    <h1 class="contact">Contact</h1>
+    <img class="contactImg" src="./assets/img/mail.png" alt="mail" />
     <section>
         <form method="POST" action="index.php">
             <div>

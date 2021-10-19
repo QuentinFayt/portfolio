@@ -1,13 +1,13 @@
 <?php
 if ($_POST) {
-    $pseudo =  htmlspecialchars(strip_tags(trim($_POST["user_name"])));
-    $mail =  htmlspecialchars(strip_tags(trim($_POST["user_mail"])));
-    $message =  htmlspecialchars(strip_tags(trim($_POST["user_message"])));
+    $pseudo =  strip_tags($_POST["user_name"]);
+    $mail = strip_tags($_POST["user_mail"]);
+    $message =  strip_tags($_POST["user_message"]);
 
 
     $toDev      = MAIL;
     $subjectDev = "Message de " . $pseudo . " | Portfolio";
-    $messageDev = "Mail de l'utilisateur : " . $mail . "\n" . $message;
+    $messageDev = "Mail de l'utilisateur $pseudo : " . $mail . "\n" . $message;
     $headersToDev =
         'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
         'From: ' . $mail  . "\r\n" .
