@@ -9,10 +9,16 @@
                 <source src="./assets/img/mail_1.mp4" type="video/mp4">
             </video>
         <?php
-        } else {
+        } elseif ($_POST["user_name"] && $_POST["user_mail"] && $_POST["user_message"]) {
         ?>
             <video autoplay muted class="mailS">
                 <source src="./assets/img/mail_2.mp4" type="video/mp4">
+            </video>
+        <?php
+        } else {
+        ?>
+            <video muted class="mailE">
+                <source src="./assets/img/mail_1.mp4" type="video/mp4">
             </video>
         <?php
         }

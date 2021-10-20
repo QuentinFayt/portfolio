@@ -38,6 +38,7 @@
         <div class="project">
             <div class="project_inner">
                 <div class="front">
+                    <p>Projet 3</p>
                 </div>
                 <div class="back">
                     <h3>Projet 3</h3>
@@ -50,6 +51,6 @@
                 </div>
             </div>
         </div>
-        
+
     </article>
 </main>
