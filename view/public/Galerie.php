@@ -4,7 +4,7 @@
     <h1>Galerie de projets</h1>
 
     <article class="galerie">
-        <div class="project" onclick="">
+        <div class="project">
             <div class="project_inner">
                 <div class="front london">
                 </div>
@@ -22,22 +22,34 @@
         <div class="project">
             <div class="project_inner">
                 <div class="front">
-                    <p>Front</p>
+                    <p>Projet 2</p>
                 </div>
                 <div class="back">
-                    <p>Back</p>
+                    <h3>Projet 2</h3>
+                    <div class="text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <a href="" target="_blank"></a>
                 </div>
             </div>
         </div>
         <div class="project">
             <div class="project_inner">
                 <div class="front">
-                    <p>Front</p>
                 </div>
                 <div class="back">
-                    <p>Back</p>
+                    <h3>Projet 3</h3>
+                    <div class="text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <a href="" target="_blank"></a>
                 </div>
             </div>
         </div>
+        
     </article>
 </main>

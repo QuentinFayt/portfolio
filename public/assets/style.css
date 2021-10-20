@@ -137,10 +137,16 @@ main p {
   font-size: 1vw;
 }
 /*===============homepage===============*/
+.title {
+  float: left;
+  color: var(--M_color);
+}
+
 .circleM {
   display: none;
 }
 .svg svg {
+  margin: 2em 0;
   width: 100px;
   height: 120px;
 }
@@ -193,16 +199,18 @@ main p {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 3px solid white;
   box-shadow: 20px 20px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.front {
+  border: 3px solid white;
 }
 .back {
   background-color: var(--T_background);
   transform: rotateY(180deg);
-  color: white;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   gap: 1em;
+  border: 3px solid var(--M_color);
 }
 .back h3 {
   text-decoration: underline;
@@ -211,13 +219,15 @@ main p {
   font-weight: bold;
   font-size: 15px;
 }
-.text + a {
-  color: blue;
-}
 .london {
-  background-image: url("./img/london.png");
+  background-image: url("./img/london-gray.png");
   background-size: cover;
   background-position-y: -5px;
+  transition: 0.5s ease-in;
+}
+.london:hover {
+  transform: scale(1.05);
+  background-image: url("./img/london.png");
 }
 /*===============Contact===============*/
 .contact {
