@@ -167,50 +167,58 @@ main p {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   gap: 2em;
-  width: 80%;
+  width: 90%;
   margin: 2em auto;
 }
-.projects {
-  height: 400px;
-  transition: transform 0.25s ease-in-out;
+.project {
+  background-color: transparent;
+  width: 100%;
   perspective: 2000vw;
 }
-.projects:hover {
-  transform: rotateY(180deg);
-}
-.projects,
-.project {
+.project_inner {
   position: relative;
-  width: 100%;
-}
-.project {
-  height: 100%;
-  transform-origin: 50% 50%;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.25s ease-in-out;
   transform-style: preserve-3d;
+}
+.rotate {
+  transform: rotateY(180deg);
 }
 .front,
 .back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   backface-visibility: hidden;
-}
-.front {
-  background-color: white;
-}
-.front p {
-  color: black;
+  border: 3px solid white;
+  box-shadow: 20px 20px 10px 10px rgba(0, 0, 0, 0.3);
 }
 .back {
+  background-color: var(--T_background);
   transform: rotateY(180deg);
-  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 1em;
 }
-
+.back h3 {
+  text-decoration: underline;
+}
+.text p {
+  font-weight: bold;
+  font-size: 15px;
+}
+.text + a {
+  color: blue;
+}
+.london {
+  background-image: url("./img/london.png");
+  background-size: cover;
+  background-position-y: -5px;
+}
 /*===============Contact===============*/
 .contact {
   height: 25vh;
