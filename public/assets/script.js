@@ -18,3 +18,8 @@ function mailEdit() {
     video.play();
   }
 }
+document.querySelectorAll(".project_inner").forEach((element) =>
+  element.addEventListener("click", function () {
+    this.classList.toggle("rotate");
+  })
+);
