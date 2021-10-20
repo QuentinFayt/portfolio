@@ -2,7 +2,9 @@
 ?>
 <main>
     <img class="circle" src="./assets/img/circle_P.png" alt="circle" />
-    <h1 class="title">Portfolio</h1><h1>|Accueil</h1>
+    <h1 class="title">Portfolio</h1>
+    <h1>|</h1>
+    <h1>Accueil</h1>
     <img class="circleM" src="./assets/img/circle_P.png" alt="circle" />
     <div class="svg">
         <?php

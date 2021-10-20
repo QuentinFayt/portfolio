@@ -141,6 +141,9 @@ main p {
   float: left;
   color: var(--M_color);
 }
+.title + h1 {
+  float: left;
+}
 
 .circleM {
   display: none;
@@ -343,6 +346,9 @@ form div textarea {
     grid-template-columns: repeat(2, 1fr);
     gap: 4em 0;
   }
+  .london {
+    background-image: url("./img/london.png");
+  }
   /*===============Contact===============*/
   form {
     width: 80vw;
@@ -484,6 +490,12 @@ form div textarea {
     margin: 0 auto;
     width: 90vw;
   }
+  .title {
+    width: 100%;
+  }
+  .title + h1 {
+    display: none;
+  }
   main h1 {
     font-size: 10vw;
     text-align: center;
@@ -504,6 +516,17 @@ form div textarea {
   }
   .homepage p {
     font-size: 2vw;
+  }
+  /*===============Galerie===============*/
+  .galerie {
+    grid-template-columns: 1fr;
+    gap: 4em 0;
+  }
+  .project_inner {
+    width: 80%;
+  }
+  .london {
+    background-image: url("./img/london.png");
   }
   /*===============Contact===============*/
   .contact {
