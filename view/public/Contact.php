@@ -20,7 +20,7 @@
     </label>
     <h1 class="contact">Contact</h1>
     <img class="contactImg" src="./assets/img/mail.png" alt="mail" />
-    <section>
+    <article>
         <form method="POST" action="">
             <div>
                 <label for="name">Nom:</label>
@@ -38,5 +38,5 @@
                 <input type="submit" value="Envoyer" />
             </div>
         </form>
-    </section>
+    </article>
 </main>
