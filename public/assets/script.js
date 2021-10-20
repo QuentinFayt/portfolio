@@ -12,5 +12,9 @@ document.querySelector(".mail").addEventListener("mouseover", function () {
 });*/
 
 function mailEdit() {
-  document.querySelector(".mailE").play();
+  let video = document.querySelector(".mailE");
+
+  if (!video.played.length) {
+    video.play();
+  }
 }
