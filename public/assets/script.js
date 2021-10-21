@@ -1,7 +1,15 @@
 function toggle() {
   let menu = document.querySelector(".menu");
+  let burger = document.querySelector(".burger");
 
   menu.className = menu.className === "menu" ? "menu in" : "menu";
+
+  burger.style.display =
+    menu.className === "menu in"
+      ? setTimeout(function () {
+          "none";
+        }, 500)
+      : "block";
 }
 /*function mail(arg, video) {
   arg === "play" ? video.play() : video.pause();
