@@ -304,6 +304,7 @@ main p {
 .liens section ul a li p {
   grid-area: text;
   flex-grow: 4;
+  width: 40ch;
   margin: 0;
   text-align: center;
 }
