@@ -307,6 +307,9 @@ main p {
   height: 200px;
   text-align: center;
 }
+.liens section ul a {
+  text-decoration: none;
+}
 .liens section ul a li div {
   flex-grow: 1;
   width: 200px;
