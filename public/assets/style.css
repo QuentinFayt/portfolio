@@ -292,7 +292,7 @@ main p {
   grid-template-rows: 1fr;
   gap: 1em;
 }
-.liens section ul li {
+.liens section ul a li {
   display: flex;
   justify-items: stretch;
   gap: 1em;
@@ -301,17 +301,21 @@ main p {
   box-shadow: 20px 20px var(--BS_color);
   margin: 2em 0;
 }
-.liens section ul li p {
+.liens section ul a li p {
   flex-grow: 4;
   margin: 0;
   height: 200px;
   text-align: center;
 }
-.liens section ul li a {
+.liens section ul a li div {
   flex-grow: 1;
-  margin: 0;
+  width: 200px;
+}
+.liens section ul a li div img {
+  display: block;
+  width: 200px;
   height: 200px;
-  border: 1px solid var(--M_color);
+  margin: 0 auto;
 }
 /*===============Contact===============*/
 .contact {
