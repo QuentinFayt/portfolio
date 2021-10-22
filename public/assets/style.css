@@ -302,22 +302,26 @@ main p {
   margin: 2em 0;
 }
 .liens section ul a li p {
+  grid-area: text;
   flex-grow: 4;
   margin: 0;
-  height: 200px;
   text-align: center;
 }
 .liens section ul a {
   text-decoration: none;
+  transition: 0.3s ease-in;
+}
+.liens section ul a:hover {
+  transform: scale(1.1);
 }
 .liens section ul a li div {
+  grid-area: pic;
   flex-grow: 1;
-  width: 200px;
 }
 .liens section ul a li div img {
-  display: block;
   width: 200px;
   height: 200px;
+  display: block;
   margin: 0 auto;
 }
 /*===============Contact===============*/
@@ -453,6 +457,16 @@ form div textarea {
   }
   .rpg {
     background-image: url("./img/rpg.png");
+  }
+
+  /*===============Liens===============*/
+
+  .liens section ul a li div img {
+    width: 150px;
+    height: 150px;
+  }
+  .liens section ul a li p {
+    font-size: 1.5vw;
   }
   /*===============Contact===============*/
   form {
@@ -657,6 +671,24 @@ form div textarea {
   .rpg {
     background-image: url("./img/rpg.png");
   }
+  /*===============Liens===============*/
+  .liens section h2 {
+    text-align: center;
+  }
+  .liens section ul a li {
+    display: grid;
+    box-shadow: none;
+    grid-template-areas:
+      "pic"
+      "text";
+  }
+  .liens section ul a li div img {
+    width: 100px;
+    height: 100px;
+  }
+  .liens section ul a li p {
+    font-size: 2.5vw;
+  }
   /*===============Contact===============*/
   .contact {
     height: unset;
@@ -705,6 +737,12 @@ form div textarea {
       }
       form {
         font-size: 5vw;
+      }
+      .liens section h2 {
+        font-size: 4vw;
+      }
+      .liens section ul a li p {
+        font-size: 4vw;
       }
     }
   }
