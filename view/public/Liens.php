@@ -2,58 +2,85 @@
 ?>
 <main>
     <h1>Liens</h1>
-    <article>
+    <article class="liens">
         <section>
             <h2>Une bible pour l'html / css / javascript</h2>
-            <lu>
+            <ul>
                 <li>
-                    <a href="https://developer.mozilla.org/fr/" target="_blank">https://developer.mozilla.org/fr/</a>
+                    <a href="https://developer.mozilla.org/fr/" target="_blank"></a>
+                    <p>
+                        https://developer.mozilla.org/fr/
+                    </p>
                 </li>
-            </lu>
+            </ul>
         </section>
         <section>
             <h2>Correcteur orthographique du css / html et petits jeux sur les flex-box et grid</h2>
-            <lu>
+            <ul>
                 <li>
-                    <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>
+                    <p>
+                        https://validator.w3.org/
+                    </p>
+                    <a href="https://validator.w3.org/" target="_blank"></a>
                 </li>
                 <li>
-                    <a href="https://flexboxfroggy.com/#fr" target="_blank">https://flexboxfroggy.com/#fr</a>
+                    <a href="https://flexboxfroggy.com/#fr" target="_blank"></a>
+                    <p>
+                        https://flexboxfroggy.com/#fr
+                    </p>
                 </li>
                 <li>
-                    <a href="https://cssgridgarden.com/#fr" target="_blank">https://cssgridgarden.com/#fr</a>
+                    <p>
+                        https://cssgridgarden.com/#fr
+                    </p>
+                    <a href="https://cssgridgarden.com/#fr" target="_blank"></a>
                 </li>
-            </lu>
+            </ul>
         </section>
         <section>
             <h2>La bible de php, et des testeurs de code php</h2>
-            <lu>
+            <ul>
                 <li>
-                    <a href="https://www.php.net/" target="_blank">https://www.php.net/</a>
+                    <a href="https://www.php.net/" target="_blank"></a>
+                    <p>
+                        https://www.php.net/
+                    </p>
                 </li>
                 <li>
-                    <a href=" http://phptester.net/" target="_blank"> http://phptester.net/</a>
+                    <p>
+                        http://phptester.net/
+                    </p>
+                    <a href=" http://phptester.net/" target="_blank"></a>
                 </li>
                 <li>
-                    <a href="https://extendsclass.com/php.html" target="_blank">https://extendsclass.com/php.html</a>
+                    <a href="https://extendsclass.com/php.html" target="_blank"></a>
+                    <p>
+                        https://extendsclass.com/php.html
+                    </p>
                 </li>
-            </lu>
+            </ul>
         </section>
         <section>
             <h2>Des exercices de code, tout langage confondu</h2>
-            <lu>
+            <ul>
                 <li>
-                    <a href="https://www.codewars.com/" target="_blank">https://www.codewars.com/</a>
+                    <p>
+                        https://www.codewars.com/
+                    </p>
+                    <a href="https://www.codewars.com/" target="_blank"></a>
                 </li>
-            </lu>
+            </ul>
         </section>
         <section>
             <h2>Github? Github!</h2>
-            <lu>
+            <ul>
                 <li>
-                    <a href="https://github.com/" target="_blank">https://github.com/</a>
+                    <a href="https://github.com/" target="_blank"></a>
+                    <p>
+                        https://github.com/
+                    </p>
                 </li>
-            </lu>
+            </ul>
         </section>
     </article>
 </main>
