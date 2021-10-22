@@ -13,9 +13,9 @@
                         </div>
                         <p>
                             Mozila developper : <br /><br />
-                            J'utilise ce site pour vérifier énormément de chose, des fonctions en javascript,
-                            des propriété css. C'est une véritable bible très utile pour aider à comprendre
-                            comment fonctionne un nouvel élément ou vérifier ce dont on est pas sur.
+                            J'utilise ce site pour vérifier énormément de choses, des fonctions en javascript,
+                            des propriétés css. C'est une véritable bible très utile pour aider à comprendre
+                            comment fonctionne un nouvel élément ou vérifier ce dont on est pas sûr.
 
                         </p>
                     </li>
@@ -29,8 +29,8 @@
                     <li>
                         <p>
                             W3C Validator : <br /> <br />
-                            Besoin de vérifier si votre code html ou css est correcte?
-                            Ce site permet de valider une page html/css aux standards W3C
+                            Besoin de vérifier si votre html ou votre css est correct?
+                            Ce site permet de valider une page html/css aux standards du world wide web consortium, ainsi que de détecter quelques bugs qui auraient pu se glisser dans vos pages.
                         </p>
                         <div>
                             <img src="./assets/img/W3C_vali.png" />
@@ -43,14 +43,17 @@
                             <img src="./assets/img/froggy_flexbox.png" />
                         </div>
                         <p>
-                            Flex box Froggy
+                            Flexbox Froggy : <br /> <br />
+                            Ceci est un petit site pour s'entraîner à utiliser des flexbox. Il s'agit en fait d'un petit jeu, qui grâce à un aspect ludique, permet de voir ou revoir les propriétés liées aux flexbox.
+                            Très pratique pour apprendre!
                         </p>
                     </li>
                 </a>
                 <a href="https://cssgridgarden.com/#fr" target="_blank">
                     <li>
                         <p>
-                            Grid Garden
+                            Grid Garden : <br /> <br />
+                            Dans la même veine que flexbox froggy, voici grid garden. Un petit jeu permettant de s'exercer sur le concept des grilles de manière ludique.
                         </p>
                         <div>
                             <img src="./assets/img/grid_garden.png" />
@@ -68,14 +71,16 @@
                             <img src="./assets/img/php.png" />
                         </div>
                         <p>
-                            PHP.net
+                            PHP.net : <br /><br />
+                            Après la bible de l'html/css/javascript, voici la bible de php. Il s'agit de la documentation sur des notions, des fonctions, des bonnes pratiques, des structures de langages en php. Vous voulez créer une fonction? Vérifiez qu'elle n'existe pas déjà!
                         </p>
                     </li>
                 </a>
                 <a href=" http://phptester.net/" target="_blank">
                     <li>
                         <p>
-                            PHP Tester
+                            PHP Tester : <br /><br />
+                            Pour créer, vérifier, apprendre, comprendre... Il faut tester! Après ces quelques mois à essayer d'approfondir des notions, mon maître-mot est devenu : tester. Toujours tester, pour bien vérifier que le comportement, la variable, la condition, la fonction, fasse bien ce à quoi on s'attendait qu'elle fasse.
                         </p>
                         <div>
                             <img src="./assets/img/phptester.png" />
@@ -88,7 +93,8 @@
                             <img src="./assets/img/extend_class.png" />
                         </div>
                         <p>
-                            Extends Class PHP Tester
+                            Extends Class PHP Tester : <br /><br />
+                            Un deuxième testeur en ligne pour php. Déjà pour bien insister qu'il faut tester son code. Mais aussi parce qu'il m'est arrivé d'en avoir l'un ou l'autre qui plante. Dans le doute je mets donc les deux.
                         </p>
                     </li>
                 </a>
@@ -100,7 +106,9 @@
                 <a href="https://www.codewars.com/" target="_blank">
                     <li>
                         <p>
-                            Code Wars
+                            Code Wars : <br /> <br />
+                            Testez s'est bien, mais s'exercer c'est mieux! Code Wars est un site qui propose des exercices dans énormément de langages et ce sur plusieurs exercices, divers et variés.
+                            Vous y commencez Kyu 7 et le plus haut niveau est le Dan 2 (Kyu 7,6,5,4,3,2,1 puis Dan 1,2). Le but étant de résoudre des petits exercices à l'apparence simple sous forme de Kata (de même niveau que les rangs). Ces exercices sont bien et aident grandement à progresser.
                         </p>
                         <div>
                             <img src="./assets/img/codewars.png" />
@@ -118,7 +126,8 @@
                             <img src="./assets/img/githubachanger.png" />
                         </div>
                         <p>
-                            Github
+                            Github : <br /><br />
+                            Je ne peux pas finir sans parler de Github, qui est devenu mon meilleur ami depuis la formation. Upload des fichiers, vérifier des versions, garder un projet à jour à travers plusieurs parcs informatiques. C'est juste un outil extrêmement puissant.
                         </p>
                     </li>
                 </a>
