@@ -29,7 +29,7 @@
                         <p>Le but de l'exercice était de mélanger les bases en php, sql, html et css pour réaliser un livre d'or. J'ai été légèrement plus loin que l'exercice demandé (notament en rajoutant une session admin)</p>
                         <p>(La partie php/sql sera mise en ligne lorsque j'aurais accès à la base de donnée)</p>
                     </div>
-                    <a href="http://quentin.webdev-cf2m.be/guest-book/index.php" target="_blank">http://quentin.webdev-cf2m.be/guest-book/index.php</a>
+                    <a href="https://quentin.webdev-cf2m.be/guest-book/public/" target="_blank">https://quentin.webdev-cf2m.be/guest-book/public/</a>
                 </div>
             </div>
         </div>

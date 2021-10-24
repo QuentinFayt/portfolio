@@ -1,5 +1,5 @@
 <?php
 
-$DB = @mysqli_connect(HOST, USER, PWD, NAME, PORT);
+$DB = mysqli_connect(HOST, USER, PWD, NAME, PORT);
 
 mysqli_set_charset($DB, "utf8");
