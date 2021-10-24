@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   viewBox="0 0 213.96 139.9"
+   id="svg6675"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   class="CVLogo">>
+  <defs
+     id="defs6679" />
+  <g
+     transform="translate(-4.3062 -73.249)"
+     display="none"
+     id="g6661">
+    <rect
+       x="-55.765"
+       y="1.6523"
+       width="332.94"
+       height="289.98"
+       rx="14.593"
+       fill="#008080"
+       stroke="#fff"
+       stroke-dasharray="0, 0.873125"
+       stroke-dashoffset=".79375"
+       stroke-width=".079375"
+       style="paint-order:stroke fill markers"
+       id="rect6659" />
+  </g>
+  <g
+     transform="translate(-4.3062 -73.249)"
+     id="g6673">
+    <g
+       fill="#fff"
+       stroke="#fff"
+       id="g6671">
+      <path
+         d="m44.612 138.32 67.331 34.456 66.505-34.456v49.35h-133.84z"
+         stroke-dasharray="0, 0.813788"
+         stroke-dashoffset=".73981"
+         stroke-width=".073981"
+         style="paint-order:stroke fill markers"
+         id="path6663" />
+      <path
+         d="m178.45 187.33c-1e-5 14.258-29.96 25.817-66.918 25.817s-66.918-11.559-66.918-25.817c30.346-14.403 108.39-8.4447 133.84 0z"
+         stroke-dasharray="0, 0.874476"
+         stroke-dashoffset=".79498"
+         stroke-width=".079498"
+         style="paint-order:stroke fill markers"
+         id="path6665" />
+      <path
+         transform="matrix(-.89458 .44691 -.89458 -.44691 0 0)"
+         d="m-2.865-241.04h119.51v119.51l-96.861-22.645z"
+         stroke-dashoffset="3"
+         stroke-width=".071316"
+         style="paint-order:stroke fill markers"
+         id="path6667" />
+      <rect
+         x="186.58"
+         y="106.28"
+         width="9.3498"
+         height="106.65"
+         rx="0"
+         stroke-dashoffset="3"
+         stroke-width=".078756"
+         style="paint-order:stroke fill markers"
+         id="rect6669" />
+    </g>
+  </g>
+</svg>
