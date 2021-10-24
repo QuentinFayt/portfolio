@@ -201,7 +201,7 @@ main p {
 .competenceCV,
 .interetCV {
   display: grid;
-  grid-template-columns: 2.5fr 3fr;
+  grid-template-columns: auto auto;
   grid-template-rows: 40px auto;
   grid-template-areas:
     "T E"
