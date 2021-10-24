@@ -1,4 +1,16 @@
 <?php
 
+define("HOST", "host");
+define("USER", "user");
+define("PWD", "password");
+define("NAME", "myDB");
+define("PORT", 1234);
+
 define("MAIL", "test@testmail.test");
-define("WHITE_LIST", ["homepage", "Accueil", "CV", "Galerie", "Tutoriels", "Liens", "Contact", "Login"]);
+
+if (isset($_SESSION["idSession"]) && $_SESSION["idSession"] == session_id()) {
+    define("WHITE_LIST", ["homepage", "Accueil", "CV", "Galerie", "Tutoriels", "Liens"]);
+    define("ADMIN_WL", ["Edit", "Logout"]);
+} else {
+    define("WHITE_LIST", ["homepage", "Accueil", "CV", "Galerie", "Tutoriels", "Liens", "Contact", "Login"]);
+}

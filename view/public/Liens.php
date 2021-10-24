@@ -123,7 +123,7 @@
                 <a href="https://github.com/" target="_blank">
                     <li>
                         <div>
-                            <img src="./assets/img/githubachanger.png" />
+                            <img src="./assets/img/git.png" />
                         </div>
                         <p>
                             Github : <br /><br />

@@ -1,14 +1,10 @@
 <?php
 ?>
 <nav class="menu">
-    <div onclick="toggle()">
-        <?php
-        include "./assets/img/logoBW.php";
-        ?>
-        <?php
-        include "./assets/img/logo.php";
-        ?>
-        <p>Quentin</p>
+    <div class="admin" onclick="toggle()">
+        <p>Welcome : <?= $_SESSION["username"] ?>!</p>
+    </div>
+
     </div>
     <ul class="first_links">
         <li><a href="./">Accueil</a></li>
@@ -18,7 +14,7 @@
         <li><a href="?p=Liens">Liens</a></li>
     </ul>
     <ul class="second_links">
-        <li><a href="?p=Contact">Contact</a></li>
-        <li><a id="login" href="?p=Login">Log in</a></li>
+        <li><a href="?p=Edit&private=true">Edit</a></li>
+        <li><a id="login" href="?p=Logout&private=true">Log out</a></li>
     </ul>
 </nav>
