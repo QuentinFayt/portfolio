@@ -48,6 +48,9 @@ nav div p {
   font-size: 1vw;
   line-height: 50px;
 }
+.admin p {
+  text-align: center;
+}
 .first_links,
 .second_links {
   padding: 0;
@@ -373,35 +376,75 @@ main p {
     visibility: hidden;
   }
 }
-form {
+.contactForm {
   width: 50vw;
   padding: 1vw;
   margin: 1vw auto;
   background-color: var(--T_background);
   box-shadow: 20px 20px var(--BS_color);
 }
-form div {
+.contactForm div {
   display: flex;
   justify-content: flex-end;
   margin: 1vw;
 }
-form div label {
+.contactForm div label {
   text-align: center;
   flex: 1;
 }
-form div input,
-form div textarea {
+.contactForm div input,
+.contactForm div textarea {
   flex: 3;
   color: black;
 }
-form div textarea {
+.contactForm div textarea {
   height: 30vh;
   resize: none;
 }
-.button {
+.buttonContact {
   cursor: pointer;
   width: 30vw;
   margin: 1vw auto;
+}
+/*===============Login===============*/
+
+.login {
+  padding: 1vw;
+  background-color: var(--T_background);
+  box-shadow: 20px 20px var(--BS_color);
+  width: 30vw;
+  margin: 2em auto;
+}
+.login div input {
+  color: black;
+  margin: 2vh auto;
+  display: block;
+  width: 20vw;
+  height: 50px;
+}
+.buttonLogin input {
+  background-color: var(--M_color);
+}
+.wrong {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid rgb(200, 0, 0);
+  background-color: rgb(255, 150, 150);
+  border-radius: 10px;
+}
+.wrong p {
+  color: black;
+  font-size: 1vw;
+}
+#cross {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  background-image: url("./img/cross.png");
+  float: right;
+  cursor: pointer;
 }
 /*============================801px To 1280px============================*/
 @media screen and (min-width: 801px) and (max-width: 1280px) {
@@ -470,7 +513,7 @@ form div textarea {
     font-size: 1.5vw;
   }
   /*===============Contact===============*/
-  form {
+  .contactForm {
     width: 80vw;
   }
   .contactImg {
@@ -483,6 +526,16 @@ form div textarea {
   .mailE,
   .mailS {
     display: none;
+  }
+  /*===============Login===============*/
+  .login {
+    width: 50vw;
+  }
+  .login div input {
+    width: 40vw;
+  }
+  .wrong p {
+    font-size: 2vw;
   }
 }
 /*============================Up To 800px============================*/
@@ -507,6 +560,7 @@ form div textarea {
   nav p {
     display: none;
   }
+
   .first_links,
   .second_links {
     width: 100%;
@@ -547,6 +601,13 @@ form div textarea {
     border: none;
     width: 50%;
     margin: 1em auto;
+  }
+  .admin {
+    width: 100%;
+  }
+  .admin p {
+    display: block;
+    font-size: 4vw;
   }
   nav p {
     display: none;
@@ -688,7 +749,9 @@ form div textarea {
     height: 100px;
   }
   .liens section ul a li p {
-    font-size: 2.5vw;
+    font-size: 4vw;
+    display: block;
+    width: 100%;
   }
   /*===============Contact===============*/
   .contact {
@@ -704,13 +767,23 @@ form div textarea {
     width: 30vw;
     margin: 2em auto;
   }
-  form {
+  .contactForm {
     box-shadow: none;
     width: 100vw;
     height: 80vh;
   }
-  form div {
+  .contactForm div {
     margin: 5vh 5vw;
+  }
+  /*===============Login===============*/
+  .login {
+    width: 80vw;
+  }
+  .login div input {
+    width: 60vw;
+  }
+  .wrong p {
+    font-size: 2vw;
   }
   @media screen and (max-width: 400px) {
     .homepage p {
@@ -720,9 +793,15 @@ form div textarea {
       width: 40vw;
       left: -41vw;
     }
+    .admin p {
+      font-size: 5vw;
+    }
     .burger {
       top: 3vw;
       left: 3vw;
+    }
+    .wrong p {
+      font-size: 3vw;
     }
     @media screen and (max-width: 350px) {
       .galerie {
@@ -736,13 +815,16 @@ form div textarea {
         width: 50vw;
         left: -51vw;
       }
-      form {
+      .contactForm {
         font-size: 5vw;
       }
       .liens section h2 {
         font-size: 4vw;
       }
       .liens section ul a li p {
+        font-size: 4vw;
+      }
+      .wrong p {
         font-size: 4vw;
       }
     }

@@ -9,7 +9,7 @@
                 <source src="./assets/img/mail_1.mp4" type="video/mp4">
             </video>
         <?php
-        } elseif ($_POST["user_name"] && $_POST["user_mail"] && $_POST["user_message"]) {
+        } elseif (isset($_POST["user_name"]) && isset($_POST["user_mail"]) && isset($_POST["user_message"])) {
         ?>
             <video autoplay muted class="mailS">
                 <source src="./assets/img/mail_2.mp4" type="video/mp4">
@@ -27,7 +27,7 @@
     <h1 class="contact">Contact</h1>
     <img class="contactImg" src="./assets/img/mail.png" alt="mail" />
     <article>
-        <form method="POST" action="">
+        <form method="POST" action="" class="contactForm">
             <div>
                 <label for="name">Nom:</label>
                 <input id="name" type="text" name="user_name" placeholder="Enter your name" required />
@@ -40,7 +40,7 @@
                 <label for="message">Votre message:</label>
                 <textarea id="message" type="textarea" name="user_message" placeholder="Enter your message" oninput="mailEdit()" required></textarea>
             </div>
-            <div class="button">
+            <div class="buttonContact">
                 <input type="submit" value="Envoyer" />
             </div>
         </form>

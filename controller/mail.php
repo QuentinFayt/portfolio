@@ -1,5 +1,5 @@
 <?php
-if ($_POST) {
+if (isset($_POST["user_name"]) && isset($_POST["user_mail"]) && isset($_POST["user_message"])) {
     $pseudo =  strip_tags($_POST["user_name"]);
     $mail = strip_tags($_POST["user_mail"]);
     $message =  strip_tags($_POST["user_message"]);
