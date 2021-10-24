@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   viewBox="0 0 138.4 193.94"
+   id="svg1598"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   class="CVLogo">
+
+  <defs
+     id="defs1602" />
+  <g
+     transform="translate(-11.976 -49.363)"
+     id="g1596">
+    <g
+       fill="#fff"
+       stroke="#fff"
+       id="g1594">
+      <rect
+         x="11.976"
+         y="124.72"
+         width="38.213"
+         height="118.58"
+         rx="0"
+         stroke-dasharray="0, 0.565387"
+         stroke-dashoffset=".51399"
+         stroke-width=".051399"
+         style="paint-order:stroke fill markers"
+         id="rect1588" />
+      <rect
+         x="62.215"
+         y="87.334"
+         width="38.213"
+         height="155.97"
+         rx="0"
+         stroke-dasharray="0, 0.648421"
+         stroke-dashoffset=".58947"
+         stroke-width=".058948"
+         style="paint-order:stroke fill markers"
+         id="rect1590" />
+      <rect
+         x="112.16"
+         y="49.363"
+         width="38.213"
+         height="193.94"
+         rx="0"
+         stroke-dasharray="0, 0.723057"
+         stroke-dashoffset=".65733"
+         stroke-width=".065733"
+         style="paint-order:stroke fill markers"
+         id="rect1592" />
+    </g>
+  </g>
+</svg>
