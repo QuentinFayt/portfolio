@@ -385,7 +385,7 @@ main p {
 }
 .contactForm div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 1vw;
 }
 .contactForm div label {
@@ -401,10 +401,14 @@ main p {
   height: 30vh;
   resize: none;
 }
-.buttonContact {
+.contactForm .buttonContact {
+  display: block;
   cursor: pointer;
-  width: 30vw;
   margin: 1vw auto;
+  width: 30vw;
+}
+.contactForm .buttonContact input {
+  width: 100%;
 }
 /*===============Login===============*/
 
@@ -774,6 +778,12 @@ main p {
   }
   .contactForm div {
     margin: 5vh 5vw;
+  }
+  .contactForm .buttonContact {
+    display: block;
+    cursor: pointer;
+    margin: 1vw auto;
+    width: 50vw;
   }
   /*===============Login===============*/
   .login {
