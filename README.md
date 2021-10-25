@@ -67,23 +67,24 @@ A choisir parmi les sujets suivants :
 1. HTML5 : Comment créer une image avec zones cliquables (balises <map> et <area>)
 2. HTML5: Comment utiliser les API de stockage (localStorage, sessionStorage)
 3. HTML5 : Comment dessiner avec l’API de dessin et d’animation (Canvas)
-4. HTML5 : Comment utiliser le glisser/déposer (drag’n’drop) natif5. CSS3 : Comment réaliser un menu déroulant avec ou sans Javascript
-5. CSS3 : Comment centrer horizontalement et verticalement le contenu d'une page
-6. CSS3 : Comment réaliser une galerie photo avec CSS et/ou Javascript (sans jQuery)
-7. CSS3 : Montrer les différents types de positionnement en CSS
-8. CSS3 : Comment ajouter une police personnalisée (Google Fonts, Dafont,...)
-9. CSS3 : Comment utiliser les transformations, transitions et animations avec CSS
-10. CSS3 : Comment utiliser les préprocesseurs CSS (LESS, SASS,...)
-11. CSS3 : Comment automatiser les tâches (minifier, concaténer, autopréfixer, Grunt, Gulp,...)
-12. FTP : Comment mettre un site en ligne avec Filezilla
-13. JavaScript : les variables, les types, les opérateurs, les tableaux
-14. Javascript : les boucles et les conditions
-15. Javascript : les fonctions
-16. PHP : les variables, les types, les opérateurs, les tableaux
-17. PHP : les boucles et les conditions
-18. PHP : les fonctions
-19. PHP : Comment envoyer par e-mail le contenu d'un formulaire de contact HTML5
-20. SQL : phpMyAdmin, comment créer une base de données, créer des tables et des champs de différents types
-21. SQL : les commandes SELECT, INSERT, UPDATE, DELETE
-22. SQL : MySQL WorkBench, comment créer un schéma, montrer les relations OneToOne, OneToMany, ManyToMany
-23. PHP/MySQL : comment réaliser une page en PHP avec une connection à une base de données via mySQLi
+4. HTML5 : Comment utiliser le glisser/déposer (drag’n’drop) natif5.
+5. CSS3 : Comment réaliser un menu déroulant avec ou sans Javascript
+6. CSS3 : Comment centrer horizontalement et verticalement le contenu d'une page
+7. CSS3 : Comment réaliser une galerie photo avec CSS et/ou Javascript (sans jQuery)
+8. CSS3 : Montrer les différents types de positionnement en CSS
+9. CSS3 : Comment ajouter une police personnalisée (Google Fonts, Dafont,...)
+10. CSS3 : Comment utiliser les transformations, transitions et animations avec CSS
+11. CSS3 : Comment utiliser les préprocesseurs CSS (LESS, SASS,...)
+12. CSS3 : Comment automatiser les tâches (minifier, concaténer, autopréfixer, Grunt, Gulp,...)
+13. FTP : Comment mettre un site en ligne avec Filezilla
+14. JavaScript : les variables, les types, les opérateurs, les tableaux
+15. Javascript : les boucles et les conditions
+16. Javascript : les fonctions
+17. PHP : les variables, les types, les opérateurs, les tableaux
+18. PHP : les boucles et les conditions
+19. PHP : les fonctions
+20. PHP : Comment envoyer par e-mail le contenu d'un formulaire de contact HTML5
+21. SQL : phpMyAdmin, comment créer une base de données, créer des tables et des champs de différents types
+22. SQL : les commandes SELECT, INSERT, UPDATE, DELETE
+23. SQL : MySQL WorkBench, comment créer un schéma, montrer les relations OneToOne, OneToMany, ManyToMany
+24. PHP/MySQL : comment réaliser une page en PHP avec une connection à une base de données via mySQLi

@@ -9,6 +9,7 @@ html * {
   --T_background: #555;
   --BS_color: #4b4b4b;
   --M_color: #0f9;
+  --MV_color: #0e8254;
 }
 body {
   background-color: var(--B_background);
@@ -179,10 +180,16 @@ main p {
   float: right;
 }
 /*===============CV===============*/
+.fornameCV {
+  color: var(--MV_color);
+}
+.nameCV {
+  color: var(--M_color);
+}
 .CV {
   background: linear-gradient(
     180deg,
-    rgba(14, 130, 84, 1) 35%,
+    var(--MV_color) 35%,
     rgba(0, 255, 153, 1) 100%
   );
   width: 60%;
@@ -310,7 +317,7 @@ main p {
 .content p {
   font-weight: bolder;
   margin: 0;
-  color: rgba(14, 130, 84, 1);
+  color: var(--MV_color);
 }
 .content .text {
   color: black;
@@ -330,7 +337,7 @@ main p {
 }
 .content ul li::before {
   content: "\2B24";
-  color: rgba(14, 130, 84, 1);
+  color: var(--MV_color);
 }
 .titreCV {
   grid-area: title;
