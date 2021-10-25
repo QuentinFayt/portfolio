@@ -181,6 +181,12 @@ main p {
   width: 60%;
   margin: 0 auto;
   margin-top: 13vh;
+  animation-duration: 2s;
+  animation-name: CVIn;
+  animation-fill-mode: forwards;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
 }
 .CV section {
   display: grid;
@@ -195,6 +201,7 @@ main p {
   background-repeat: repeat-y;
   background-position-x: 24.5%;
   background-size: 15px;
+  overflow-x: hidden;
 }
 .experienceCV,
 .formationCV,
@@ -206,6 +213,26 @@ main p {
   grid-template-areas:
     "T E"
     "C C";
+}
+@keyframes CVIn {
+  0% {
+    transform: translateY(3000px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes partsIn {
+  from {
+    transform: translateX(5000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 .experienceCV h3,
 .formationCV h3,
@@ -267,6 +294,9 @@ main p {
   background-size: 80px;
   padding-left: 2vw;
   height: 70px;
+  animation-duration: 2s;
+  animation-name: partsIn;
+  animation-fill-mode: forwards;
 }
 .titreCV h2 {
   margin: 0;
@@ -280,13 +310,10 @@ main p {
   background-position-x: 60%;
   background-position-y: 100%;
   background-repeat: no-repeat;
-  position: relative;
 }
 .circleCV {
   position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+  left: 1.5vw;
   top: -10vh;
   background-image: url("./img/moi.jpg");
   background-repeat: no-repeat;
@@ -294,7 +321,7 @@ main p {
   background-position: 0vh -2vw;
   border-radius: 50%;
   shape-outside: circle(50%);
-  width: 80%;
+  width: 20%;
 }
 .experienceCV {
   grid-area: exp;

@@ -3,12 +3,12 @@
 <main>
     <h1>Curriculum Vitae | Quentin Fayt</h1>
     <article class="CV">
+        <img class="circleCV" src="./assets/img/circle_P.png" alt="circle" />
         <section>
             <div class="titreCV">
                 <h2>Web-Développeur</h2>
             </div>
             <div class="contactCV">
-                <img class="circleCV" src="./assets/img/circle_P.png" alt="circle" />
             </div>
             <div class="experienceCV">
                 <h3>Expérience professionelle <?php include "./assets/img/learnO.svg" ?></h3>
