@@ -1,12 +1,12 @@
 <?php
 ?>
 <nav class="menu">
-    <div onclick="toggle()">
+    <div>
         <?php
-        include "./assets/img/logoBW.php";
+        include "./assets/img/logoBW.svg";
         ?>
         <?php
-        include "./assets/img/logo.php";
+        include "./assets/img/logo.svg";
         ?>
         <p>Quentin</p>
     </div>
