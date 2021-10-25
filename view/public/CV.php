@@ -56,7 +56,7 @@
                             Web-Développement
                         </li>
                     </ul>
-                    <p>2015 - 2018 • Formation • IFAPME </p>
+                    <p>2025 - 2018 • Formation • IFAPME </p>
                     <ul>
                         <li>
                             Réalisation audio-visuel

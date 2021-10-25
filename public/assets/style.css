@@ -51,7 +51,7 @@ nav div p {
 .admin {
   background-color: var(--M_color);
 }
-.admin .adminLogo{
+.admin .adminLogo {
   display: none;
 }
 .admin p {
@@ -691,9 +691,9 @@ main p {
   nav p {
     display: none;
   }
-  .admin p{
+  .admin p {
     display: block;
-    font-size: 0.9vw
+    font-size: 0.9vw;
   }
   nav div {
     border-right: none;
@@ -715,16 +715,16 @@ main p {
     font-size: 1.5vw;
   }
   /*===============CV===============*/
-  .content ul li{
+  .content ul li {
     font-size: 1.5vw;
   }
-  .content p{
+  .content p {
     font-size: 1.5vw;
   }
-  .CV{
+  .CV {
     width: 80%;
   }
-  .titreCV h2{
+  .titreCV h2 {
     font-size: 3vw;
   }
   .experienceCV,
@@ -732,8 +732,9 @@ main p {
   .competenceCV,
   .interetCV {
     grid-template-areas:
-    "T"
-    "C";
+      "T"
+      "C";
+    grid-template-columns: 1fr;
   }
   .CV div h3 {
     font-size: 1.5vw;
@@ -977,6 +978,59 @@ main p {
   }
   .homepage p {
     font-size: 3vw;
+  }
+  /*===============CV===============*/
+  .content {
+    margin: 2vh 0 0 2vw;
+  }
+  .content ul li {
+    font-size: 2.5vw;
+  }
+  .content p {
+    font-size: 2.5vw;
+  }
+  .circleCV {
+    animation: none;
+    visibility: visible;
+    opacity: 1;
+    top: -2vh;
+  }
+  .CV {
+    width: 100%;
+    animation: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .titreCV {
+    animation: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .titreCV h2 {
+    font-size: 4vw;
+    margin-left: 2vw;
+  }
+  .experienceCV,
+  .formationCV,
+  .competenceCV,
+  .interetCV {
+    grid-template-areas:
+      "T"
+      "C";
+    grid-template-columns: 1fr;
+    animation: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .CV div h3 {
+    margin-top: 3vh;
+    font-size: 3.5vw;
+  }
+  .CV section {
+    background-position-x: 26%;
+  }
+  .content pre {
+    font-size: 2.5vw;
   }
   /*===============Galerie===============*/
   .galerie {
