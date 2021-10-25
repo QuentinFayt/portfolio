@@ -48,7 +48,14 @@ nav div p {
   font-size: 1vw;
   line-height: 50px;
 }
+.admin {
+  background-color: var(--M_color);
+}
+.admin .adminLogo{
+  display: none;
+}
 .admin p {
+  color: black;
   text-align: center;
 }
 .first_links,
@@ -181,7 +188,7 @@ main p {
   width: 60%;
   margin: 0 auto;
   margin-top: 13vh;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: CVIn;
   animation-fill-mode: forwards;
   position: relative;
@@ -201,7 +208,7 @@ main p {
   background-repeat: repeat-y;
   background-position-x: 24.5%;
   background-size: 15px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .experienceCV,
 .formationCV,
@@ -213,6 +220,8 @@ main p {
   grid-template-areas:
     "T E"
     "C C";
+  visibility: hidden;
+  opacity: 0;
 }
 @keyframes CVIn {
   0% {
@@ -226,12 +235,49 @@ main p {
     visibility: visible;
   }
 }
-@keyframes partsIn {
+@keyframes titleIn {
   from {
-    transform: translateX(5000px);
+    transform: translateX(3000px);
   }
   to {
     transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes partsIn {
+  from {
+    transform: translateX(3000px);
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes circleCVIn {
+  0% {
+    transform: scale(2);
+  }
+  25% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  85% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  95% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
   }
 }
 .experienceCV h3,
@@ -294,8 +340,8 @@ main p {
   background-size: 80px;
   padding-left: 2vw;
   height: 70px;
-  animation-duration: 2s;
-  animation-name: partsIn;
+  animation-duration: 1s;
+  animation-name: titleIn;
   animation-fill-mode: forwards;
 }
 .titreCV h2 {
@@ -322,18 +368,40 @@ main p {
   border-radius: 50%;
   shape-outside: circle(50%);
   width: 20%;
+  visibility: hidden;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: circleCVIn;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  animation-fill-mode: forwards;
 }
 .experienceCV {
   grid-area: exp;
+  animation-duration: 2s;
+  animation-delay: 250ms;
+  animation-name: partsIn;
+  animation-fill-mode: forwards;
 }
 .formationCV {
   grid-area: forma;
+  animation-duration: 2s;
+  animation-delay: 500ms;
+  animation-name: partsIn;
+  animation-fill-mode: forwards;
 }
 .competenceCV {
   grid-area: comp;
+  animation-duration: 2s;
+  animation-delay: 750ms;
+  animation-name: partsIn;
+  animation-fill-mode: forwards;
 }
 .interetCV {
   grid-area: int;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-name: partsIn;
+  animation-fill-mode: forwards;
 }
 /*===============Galerie===============*/
 .galerie {
@@ -623,6 +691,10 @@ main p {
   nav p {
     display: none;
   }
+  .admin p{
+    display: block;
+    font-size: 0.9vw
+  }
   nav div {
     border-right: none;
   }
@@ -640,6 +712,30 @@ main p {
     background-position: 5px -40px;
   }
   .homepage p {
+    font-size: 1.5vw;
+  }
+  /*===============CV===============*/
+  .content ul li{
+    font-size: 1.5vw;
+  }
+  .content p{
+    font-size: 1.5vw;
+  }
+  .CV{
+    width: 80%;
+  }
+  .titreCV h2{
+    font-size: 3vw;
+  }
+  .experienceCV,
+  .formationCV,
+  .competenceCV,
+  .interetCV {
+    grid-template-areas:
+    "T"
+    "C";
+  }
+  .CV div h3 {
     font-size: 1.5vw;
   }
   /*===============Galerie===============*/
@@ -770,12 +866,24 @@ main p {
     width: 50%;
     margin: 1em auto;
   }
+
   .admin {
     width: 100%;
+    background-color: unset;
   }
   .admin p {
     display: block;
+    color: white;
     font-size: 4vw;
+  }
+  .admin .adminLogo {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    background-image: url("./img/logo.ico");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
   }
   nav p {
     display: none;

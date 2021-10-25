@@ -8,7 +8,7 @@
     <img class="circleM" src="./assets/img/circle_P.png" alt="circle" />
     <div class="svg">
         <?php
-        include "./assets/img/logo.php"
+        include "./assets/img/logo.svg"
         ?>
     </div>
 

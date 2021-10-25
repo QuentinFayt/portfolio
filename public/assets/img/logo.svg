@@ -1,6 +1,4 @@
-<?php
-?>
-<svg viewBox="0 0 180.38086 204.56636" version="1.1" id="svg5">
+<svg viewBox="0 0 180.38086 204.56636" version="1.1" id="svg5" onclick="toggle()">
    <defs id="defs2">
       <linearGradient id="linearGradient17254">
          <stop style="stop-color:#ffffff;stop-opacity:1;" offset="0" id="stop17252" />

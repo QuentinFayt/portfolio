@@ -1,8 +1,10 @@
 <?php
 ?>
 <nav class="menu">
-    <div class="admin" onclick="toggle()">
+    <div class="admin">
         <p>Welcome : <?= $_SESSION["username"] ?>!</p>
+        <div class="adminLogo" onclick="toggle()">
+        </div>
     </div>
 
     </div>
