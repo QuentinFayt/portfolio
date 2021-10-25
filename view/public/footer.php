@@ -1,3 +1,5 @@
+<?php
+?>
 <footer>
     <a href="https://github.com/QuentinFayt" target="_blank">
         <img class="foot_log mobile1" src="./assets/img/github.png" alt="github" />
