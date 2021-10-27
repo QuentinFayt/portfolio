@@ -526,7 +526,7 @@ main p {
   background-image: url("./img/rpg.png");
 }
 /*===============Tutoriels===============*/
-.tuto {
+.tutos {
   width: 90vw;
   margin: 3vh auto;
   display: grid;
@@ -534,23 +534,41 @@ main p {
   grid-template-areas:
     "tu1 tu2"
     "conclu conclu";
-  background-color: var(--T_background);
-  box-shadow: 20px 20px var(--BS_color);
-}
-.tuto h2 {
-  text-align: center;
+  gap: 30px;
 }
 .tuto1 {
   grid-area: tu1;
-  cursor: move;
+  justify-self: right;
 }
 .tuto2 {
   grid-area: tu2;
-  cursor: move;
 }
 .conclu {
   grid-area: conclu;
+  justify-self: center;
 }
+.tuto h2,
+.conclu h2 {
+  text-align: center;
+}
+.tuto1,
+.tuto2,
+.conclu {
+  width: 60ch;
+  padding: 1vh;
+  background-color: var(--T_background);
+  border: 3px solid var(--M_color);
+  box-shadow: 17px 17px var(--BS_color), 17px 17px 0px 3px #007f4c;
+}
+.tuto1,
+.tuto2 {
+  cursor: move;
+}
+.tuto1.over,
+.tuto2.over {
+  border: 3px dotted var(--M_color);
+}
+
 /*===============Liens===============*/
 .liens section ul {
   margin: 0 auto;
@@ -800,7 +818,12 @@ main p {
   .rpg {
     background-image: url("./img/rpg.png");
   }
-
+  /*===============Tutoriels===============*/
+  .tuto1,
+  .tuto2,
+  .conclu {
+    width: unset;
+  }
   /*===============Liens===============*/
 
   .liens section ul a li div img {
@@ -1105,6 +1128,25 @@ main p {
   }
   .rpg {
     background-image: url("./img/rpg.png");
+  }
+  /*===============Tutoriels===============*/
+  .mainTuto h1 {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .tutos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tu1"
+      "tu2"
+      "conclu";
+  }
+  .tuto1,
+  .tuto2,
+  .conclu {
+    width: unset;
+    box-shadow: unset;
   }
   /*===============Liens===============*/
 
