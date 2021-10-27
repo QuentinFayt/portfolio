@@ -525,6 +525,32 @@ main p {
 .rpg:hover {
   background-image: url("./img/rpg.png");
 }
+/*===============Tutoriels===============*/
+.tuto {
+  width: 90vw;
+  margin: 3vh auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "tu1 tu2"
+    "conclu conclu";
+  background-color: var(--T_background);
+  box-shadow: 20px 20px var(--BS_color);
+}
+.tuto h2 {
+  text-align: center;
+}
+.tuto1 {
+  grid-area: tu1;
+  cursor: move;
+}
+.tuto2 {
+  grid-area: tu2;
+  cursor: move;
+}
+.conclu {
+  grid-area: conclu;
+}
 /*===============Liens===============*/
 .liens section ul {
   margin: 0 auto;
@@ -1002,8 +1028,13 @@ main p {
     opacity: 1;
     top: -2vh;
   }
+  .mainCV h1 {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+  }
   .CV {
-    width: 100%;
+    width: 90vw;
     animation: none;
     visibility: visible;
     opacity: 1;
@@ -1040,6 +1071,11 @@ main p {
     font-size: 2.5vw;
   }
   /*===============Galerie===============*/
+  .mainGalerie h1 {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+  }
   .galerie {
     grid-template-columns: 1fr;
     gap: 4em 0;
@@ -1071,6 +1107,7 @@ main p {
     background-image: url("./img/rpg.png");
   }
   /*===============Liens===============*/
+
   .liens section h2 {
     text-align: center;
   }
@@ -1080,6 +1117,9 @@ main p {
     grid-template-areas:
       "pic"
       "text";
+  }
+  .liens section ul a:hover {
+    transform: unset;
   }
   .liens section ul a li div img {
     width: 100px;
@@ -1106,7 +1146,7 @@ main p {
   }
   .contactForm {
     box-shadow: none;
-    width: 100vw;
+    width: 90vw;
     height: 80vh;
   }
   .contactForm div {
@@ -1120,11 +1160,11 @@ main p {
   }
   /*===============Login===============*/
   .login {
-    width: 80vw;
+    width: 90vw;
     box-shadow: none;
   }
   .login div input {
-    width: 60vw;
+    width: 70vw;
   }
   .wrong p {
     font-size: 2vw;

@@ -1,6 +1,6 @@
 <?php
 ?>
-<main>
+<main class="mainGalerie">
     <h1>Galerie de projets</h1>
 
     <article class="galerie">
