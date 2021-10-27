@@ -1149,7 +1149,12 @@ main p {
     box-shadow: unset;
   }
   /*===============Liens===============*/
-
+  .mainTuto h1,
+  .liens section h2 {
+    display: block;
+    width: 80vw;
+    margin: 1vh auto;
+  }
   .liens section h2 {
     text-align: center;
   }
