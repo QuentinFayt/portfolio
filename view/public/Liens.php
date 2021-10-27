@@ -6,7 +6,7 @@
         <section>
             <h2>Une bible pour l'html / css / javascript</h2>
             <ul>
-                <a href="https://developer.mozilla.org/fr/" target="_blank">
+                <a href="https://developer.mozilla.org/fr/" target="_blank" draggable="false">
                     <li>
                         <div>
                             <img src="./assets/img/mozilla_dev.png" />
@@ -25,7 +25,7 @@
         <section>
             <h2>Correcteur orthographique du css / html et petits jeux sur les flex-box et grid</h2>
             <ul>
-                <a href="https://validator.w3.org/" target="_blank">
+                <a href="https://validator.w3.org/" target="_blank" draggable="false">
                     <li>
                         <p>
                             W3C Validator : <br /> <br />
@@ -37,7 +37,7 @@
                         </div>
                     </li>
                 </a>
-                <a href="https://flexboxfroggy.com/#fr" target="_blank">
+                <a href="https://flexboxfroggy.com/#fr" target="_blank" draggable="false">
                     <li>
                         <div>
                             <img src="./assets/img/froggy_flexbox.png" />
@@ -49,7 +49,7 @@
                         </p>
                     </li>
                 </a>
-                <a href="https://cssgridgarden.com/#fr" target="_blank">
+                <a href="https://cssgridgarden.com/#fr" target="_blank" draggable="false">
                     <li>
                         <p>
                             Grid Garden : <br /> <br />
@@ -65,7 +65,7 @@
         <section>
             <h2>La bible de php, et des testeurs de code php</h2>
             <ul>
-                <a href="https://www.php.net/" target="_blank">
+                <a href="https://www.php.net/" target="_blank" draggable="false">
                     <li>
                         <div>
                             <img src="./assets/img/php.png" />
@@ -76,7 +76,7 @@
                         </p>
                     </li>
                 </a>
-                <a href=" http://phptester.net/" target="_blank">
+                <a href=" http://phptester.net/" target="_blank" draggable="false">
                     <li>
                         <p>
                             PHP Tester : <br /><br />
@@ -87,7 +87,7 @@
                         </div>
                     </li>
                 </a>
-                <a href="https://extendsclass.com/php.html" target="_blank">
+                <a href="https://extendsclass.com/php.html" target="_blank" draggable="false">
                     <li>
                         <div>
                             <img src="./assets/img/extend_class.png" />
@@ -103,7 +103,7 @@
         <section>
             <h2>Des exercices de code, tout langage confondu</h2>
             <ul>
-                <a href="https://www.codewars.com/" target="_blank">
+                <a href="https://www.codewars.com/" target="_blank" draggable="false">
                     <li>
                         <p>
                             Code Wars : <br /> <br />
@@ -120,7 +120,7 @@
         <section>
             <h2>Github? Github!</h2>
             <ul>
-                <a href="https://github.com/" target="_blank">
+                <a href="https://github.com/" target="_blank" draggable="false">
                     <li>
                         <div>
                             <img src="./assets/img/git.png" />
