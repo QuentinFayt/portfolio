@@ -77,3 +77,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     box.addEventListener("dragend", dragEnd, false);
   });
 });
+function resizeBoxes() {
+  let check = document.querySelector(".check").clientHeight;
+  let presentation = document.querySelector(".presentation");
+  let guestbook = document.querySelector(".portGuestbook");
+  presentation.style.height = `${check}px`;
+  guestbook.style.height = `${check}px`;
+}
+
+document.addEventListener("DOMContentLoaded", resizeBoxes);
+window.addEventListener("resize", resizeBoxes);
