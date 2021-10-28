@@ -11,6 +11,10 @@ html * {
   --M_color: #0f9;
   --MV_color: #0e8254;
 }
+@font-face {
+  font-family: "retroGaming";
+  src: url("./fonts/retro_gaming-webfont.woff") format("woff");
+}
 body {
   background-color: var(--B_background);
   margin: 0;
@@ -22,6 +26,32 @@ body {
     "main"
     "foot";
   gap: 10px;
+}
+.darkerMainColor {
+  color: var(--MV_color);
+}
+.mainColor {
+  color: var(--M_color);
+}
+.portfolioFont {
+  font-family: "retroGaming";
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--MV_color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--M_color);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--M_color);
 }
 /*============================Nav============================*/
 nav {
@@ -91,6 +121,7 @@ nav div p {
   text-decoration: none;
   text-align: center;
   font-size: 1vw;
+  font-weight: bolder;
 }
 #login {
   background-color: var(--M_color);
@@ -147,51 +178,75 @@ main p {
   margin: 1em;
 }
 /*===============homepage===============*/
-.title {
-  float: left;
-  color: var(--M_color);
-}
-.title + h1 {
-  float: left;
-}
-.circleM {
-  display: none;
-}
-.svg svg {
-  margin: 2em 0;
-  width: 100px;
-  height: 120px;
+.svg {
+  grid-area: svg;
+  width: 5vw;
+  margin: 3vh auto 0 auto;
 }
 .homepage {
-  background-color: var(--T_background);
-  box-shadow: 20px 20px var(--BS_color);
-  padding: 1em;
-  margin: 2em 20px 2em 0;
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "sec1 sec2";
+  width: 95vw;
+  margin: 0 auto;
+  gap: 10px;
+  top: 33vh;
+  bottom: 30vh;
+  left: 0;
+  right: 0;
 }
-.circle {
-  width: 20vw;
+.mainHomepage img {
+  margin: 8vh auto;
   background-image: url("./img/moi.jpg");
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position: 10px -70px;
+  background-size: cover;
   border-radius: 50%;
-  shape-outside: circle(50%);
-  margin: 0 2em;
-  float: right;
+  background-position-y: -10vh;
+  background-repeat: no-repeat;
+  width: 20vw;
+  display: block;
+}
+.homepage section {
+  margin: 0 auto;
+}
+.presentation,
+.portGuestbook {
+  width: 60ch;
+  perspective: 80vh;
+}
+.presentation {
+  grid-area: sec1;
+}
+.portGuestbook {
+  grid-area: sec2;
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.presentation p {
+  background-color: var(--T_background);
+  padding: 1em;
+  transform-origin: left;
+  transform: rotateX(10deg) rotateY(15deg) rotateZ(-5deg);
+}
+
+.portGuestbook div {
+  padding: 1em;
+  margin: 2vh;
+  transform-origin: right;
+  background-color: var(--T_background);
+  transform: rotateX(10deg) rotateY(-15deg) rotateZ(5deg);
+}
+.portGuestbook div p {
+  margin: 0;
+}
+.portGuestbook div h3 {
+  text-decoration: underline;
+  margin: 0;
 }
 /*===============CV===============*/
-.fornameCV {
-  color: var(--MV_color);
-}
-.nameCV {
-  color: var(--M_color);
-}
 .CV {
-  background: linear-gradient(
-    180deg,
-    var(--MV_color) 35%,
-    rgba(0, 255, 153, 1) 100%
-  );
+  background: linear-gradient(180deg, var(--MV_color) 35%, var(--M_color) 100%);
   width: 60%;
   margin: 0 auto;
   margin-top: 13vh;
@@ -373,7 +428,6 @@ main p {
   background-size: 100%;
   background-position: 0vh -2vw;
   border-radius: 50%;
-  shape-outside: circle(50%);
   width: 20%;
   visibility: hidden;
   opacity: 0;
@@ -570,17 +624,17 @@ main p {
 }
 
 /*===============Liens===============*/
+.liens h2 {
+  text-align: center;
+}
 .liens section ul {
   margin: 0 auto;
   padding: 0;
-  width: 80%;
   display: grid;
-  grid-template-rows: 1fr;
   gap: 1em;
 }
 .liens section ul a li {
   display: flex;
-  justify-items: stretch;
   gap: 1em;
   padding: 1em;
   background-color: var(--T_background);
@@ -589,27 +643,26 @@ main p {
 }
 .liens section ul a li p {
   grid-area: text;
-  flex-grow: 4;
-  width: 40ch;
+  width: 60ch;
   margin: 0;
   text-align: center;
 }
 .liens section ul a {
   text-decoration: none;
   transition: 0.3s ease-in;
+  width: fit-content;
+  margin: 0 auto;
 }
 .liens section ul a:hover {
   transform: scale(1.1);
 }
 .liens section ul a li div {
   grid-area: pic;
-  flex-grow: 1;
 }
 .liens section ul a li div img {
   width: 200px;
   height: 200px;
   display: block;
-  margin: 0 auto;
 }
 /*===============Contact===============*/
 .contact {
@@ -759,11 +812,48 @@ main p {
   }
   /*============================Main============================*/
   /*===============homepage===============*/
-  .circle {
-    background-position: 5px -40px;
+  .svg {
+    grid-area: svg;
+    width: 5vw;
+    margin: 3vh auto 0 auto;
   }
-  .homepage p {
+  .homepage {
+    width: 90vw;
+    position: unset;
+  }
+  .mainHomepage img {
+    background-position-y: -7vh;
+  }
+  .presentation,
+  .portGuestbook {
+    width: 40vw;
+    perspective: unset;
+    margin: 0;
+  }
+  .portGuestbook {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 55vh;
+  }
+  .presentation p,
+  .portGuestbook div p {
     font-size: 1.5vw;
+  }
+  .portGuestbook div h3 {
+    font-size: 2vw;
+  }
+  .presentation p {
+    transform-origin: unset;
+    transform: unset;
+    margin: 0;
+  }
+
+  .portGuestbook div {
+    padding: 1em;
+    margin: 0;
+    margin-bottom: 2vh;
+    transform-origin: unset;
+    transform: unset;
   }
   /*===============CV===============*/
   .content ul li {
@@ -1003,38 +1093,44 @@ main p {
   }
   /*============================Main============================*/
   /*===============homepage===============*/
-  .homepage {
-    box-shadow: none;
-    margin: 0 auto;
-    width: 90vw;
+  .svg {
+    grid-area: svg;
+    width: 5vw;
+    margin: 3vh auto 0 auto;
   }
-  .title {
-    width: 100%;
+  .mainHomepage img {
+    background-position-y: -4vh;
   }
-  .title + h1 {
-    display: none;
-  }
-  main h1 {
-    font-size: 10vw;
-    text-align: center;
-  }
-  .circle {
-    display: none;
-  }
-  .circleM {
+  .mainHomepage h1 {
     display: block;
-    width: 30vw;
-    background-image: url("./img/moi.jpg");
-    background-repeat: no-repeat;
-    background-size: 95%;
-    background-position: 1vw -7vw;
-    border-radius: 50%;
-    shape-outside: circle(50%);
-    margin: 2em auto;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    font-size: 5vw;
   }
-  .homepage p {
+  .homepage {
+    width: 90vw;
+    position: unset;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sec1" "sec2";
+  }
+  .presentation {
+    width: 80vw;
+    perspective: unset;
+    margin: 0;
+  }
+  .portGuestbook {
+    display: none;
+  }
+  .presentation p {
     font-size: 3vw;
   }
+  .presentation p {
+    transform-origin: unset;
+    transform: unset;
+    margin: 0;
+  }
+
   /*===============CV===============*/
   .content {
     margin: 2vh 0 0 2vw;
@@ -1155,6 +1251,9 @@ main p {
     width: 80vw;
     margin: 1vh auto;
   }
+  .liens section ul a {
+    width: 80vw;
+  }
   .liens section h2 {
     text-align: center;
   }
@@ -1168,12 +1267,17 @@ main p {
   .liens section ul a:hover {
     transform: unset;
   }
-  .liens section ul a li div img {
+  .liens section ul a li div {
     width: 100px;
     height: 100px;
+    margin: 0 auto;
+  }
+  .liens section ul a li div img {
+    width: 100%;
+    height: 100%;
   }
   .liens section ul a li p {
-    font-size: 4vw;
+    font-size: 2vw;
     display: block;
     width: 100%;
   }
@@ -1217,8 +1321,11 @@ main p {
     font-size: 2vw;
   }
   @media screen and (max-width: 400px) {
-    .homepage p {
-      font-size: 3vw;
+    .mainHomepage img {
+      background-position-y: -3vh;
+    }
+    .presentation p {
+      font-size: 4vw;
     }
     nav {
       width: 40vw;
@@ -1234,13 +1341,16 @@ main p {
     .wrong p {
       font-size: 3vw;
     }
+    .liens section ul a li p {
+      font-size: 3vw;
+    }
     @media screen and (max-width: 350px) {
+      .presentation p {
+        font-size: 5vw;
+      }
       .galerie {
         margin-bottom: 10em;
         gap: 8em 0;
-      }
-      .homepage p {
-        font-size: 4vw;
       }
       nav {
         width: 50vw;

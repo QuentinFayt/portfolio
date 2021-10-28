@@ -1,7 +1,7 @@
 <?php
 ?>
 <main class="mainCV">
-    <h1>Curriculum Vitae | <span class="fornameCV">Quentin<span> <span class="nameCV">Fayt</span></h1>
+    <h1>Curriculum Vitae | <span class="darkerMainColor">Quentin<span> <span class="mainColor">Fayt</span></h1>
     <article class="CV">
         <img class="circleCV" src="./assets/img/circle_P.png" alt="circle" />
         <section>
