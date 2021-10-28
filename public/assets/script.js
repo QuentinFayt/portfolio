@@ -87,3 +87,9 @@ function resizeBoxes() {
 
 document.addEventListener("DOMContentLoaded", resizeBoxes);
 window.addEventListener("resize", resizeBoxes);
+
+let container = document.querySelector(".portGuestBookContainer");
+let cells = document.querySelectorAll(".cell");
+
+let selectedIndex = 0;
+let cellWidth;

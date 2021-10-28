@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,7 +17,16 @@
     <script src="./assets/script.js" defer></script>
     <title>
         PortFolio |
-        <?php echo isset($_GET["p"]) && in_array($_GET["p"], WHITE_LIST) ? $_GET["p"] : "Accueil"; //change title with pages
+        <?php
+        if (isset($_SESSION["idSession"])) {
+            if (isset($_GET["private"])) {
+                echo isset($_GET["p"]) && in_array($_GET["p"], ADMIN_WL) ? $_GET["p"] : "Accueil";
+            } else {
+                echo isset($_GET["p"]) && in_array($_GET["p"], WHITE_LIST) ? $_GET["p"] : "Accueil";
+            }
+        } else {
+            echo isset($_GET["p"]) && in_array($_GET["p"], WHITE_LIST) ? $_GET["p"] : "Accueil";
+        } //change title with pages
         ?>
     </title>
 </head>
