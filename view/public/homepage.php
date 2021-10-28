@@ -57,6 +57,7 @@
                         Est alias repudiandae similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit, porro suscipit commodi eum unde cupiditate quasi dolor nulla voluptatibus reiciendis nam, iure totam corporis! Optio est repellendus error sapiente!
                     </p>
                 </div>
+
             </div>
         </section>
     </article>

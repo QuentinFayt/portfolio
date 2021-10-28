@@ -188,6 +188,7 @@ main p {
   display: grid;
   grid-template-columns: 1fr 300px 1fr;
   margin: 5vh auto;
+  gap: 1vw;
 }
 .presentation,
 .portGuestbook {
@@ -209,8 +210,8 @@ main p {
 .portGuestbook {
   position: relative;
   perspective: 1000px;
-  border: 1px solid white;
   width: 100%;
+  /*   overflow: hidden; */
 }
 .portGuestBookContainer {
   width: 100%;
@@ -222,10 +223,11 @@ main p {
 }
 .cell {
   position: absolute;
+  width: 90%;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 12%;
+  top: 10%;
   transition: transform 1s, opacity 1s;
 }
 .cell:nth-child(1) {
