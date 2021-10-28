@@ -88,6 +88,7 @@ function resizeBoxes() {
 document.addEventListener("DOMContentLoaded", resizeBoxes);
 window.addEventListener("resize", resizeBoxes);
 
+/*=============================Wheel=============================*/
 let container = document.querySelector(".portGuestBookContainer");
 let cells = document.querySelectorAll(".cell");
 let cellCount = cells.length;
@@ -102,10 +103,10 @@ function rotateCarousel() {
   container.style.transform =
     "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
 }
-document.querySelector(".circle").addEventListener("click", () => {
+/* window.addEventListener("wheel", () => {
   selectedIndex--;
   rotateCarousel();
-});
+}); */
 
 function changeCarousel() {
   theta = 360 / cellCount;
@@ -127,3 +128,37 @@ function changeCarousel() {
   rotateCarousel();
 }
 changeCarousel();
+/*=============================Scroll Direction=============================*/
+document.onmousewheel = function (e) {
+  directionProcess(mouseWheelDirection(e));
+};
+
+function mouseWheelDirection(e) {
+  let delta = null,
+    direction = false;
+
+  if (!e) {
+    e = window.event;
+  }
+  if (e.wheelDelta) {
+    delta = e.wheelDelta / 60;
+  } else if (e.detail) {
+    delta = -e.detail / 2;
+  }
+  if (delta !== null) {
+    direction = delta > 0 ? "up" : "down";
+  }
+  return direction;
+}
+function directionProcess(direction) {
+  switch (direction) {
+    case "up":
+      selectedIndex++;
+      rotateCarousel();
+      break;
+    case "down":
+      selectedIndex--;
+      rotateCarousel();
+      break;
+  }
+}
