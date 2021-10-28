@@ -179,7 +179,7 @@ main p {
 .title {
   display: flex;
   flex-basis: fit-content;
-  gap: 10px;
+  gap: 2em;
 }
 .svg {
   width: 5vw;
@@ -199,6 +199,7 @@ main p {
 .portGuestBookContainer div {
   background-color: var(--T_background);
   padding: 1vw;
+  border: 1px solid var(--M_color);
 }
 .homepage section div h3,
 .homepage section div p {
@@ -211,7 +212,7 @@ main p {
   position: relative;
   perspective: 1000px;
   width: 100%;
-  /*   overflow: hidden; */
+  overflow: hidden;
 }
 .portGuestBookContainer {
   width: 100%;
@@ -427,7 +428,7 @@ main p {
   position: absolute;
   left: 1.5vw;
   top: -10vh;
-  background-image: url("./img/moi.jpg");
+  background-image: url("./img/moi.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0vh -2vw;
