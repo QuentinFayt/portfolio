@@ -10,6 +10,7 @@
         <h1><span class="mainColor portfolioFont">Portfolio<span> | Accueil</h1>
     </div>
     <article class="homepage">
+        <img src="./assets/img/arrowUp.png" class="up" draggable="false" />
         <section class="presentation">
             <div class="check">
                 <h3>Ma présentation:</h3>
@@ -21,7 +22,7 @@
                 </p>
             </div>
         </section>
-        <img src="./assets/img/circle_P.png" class="circle" />
+        <img src="./assets/img/triangle.png" class="circle" draggable="false" />
         <section class="portGuestbook">
             <div class="portGuestBookContainer">
                 <div class="cell">
@@ -57,8 +58,8 @@
                         Est alias repudiandae similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit, porro suscipit commodi eum unde cupiditate quasi dolor nulla voluptatibus reiciendis nam, iure totam corporis! Optio est repellendus error sapiente!
                     </p>
                 </div>
-
             </div>
         </section>
+        <img src="./assets/img/arrowDown.png" class="down" draggable="false" />
     </article>
 </main>

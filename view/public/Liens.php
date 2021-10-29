@@ -9,7 +9,7 @@
                 <a href="https://developer.mozilla.org/fr/" target="_blank" draggable="false">
                     <li>
                         <div>
-                            <img src="./assets/img/mozilla_dev.png" />
+                            <img draggable="false" src="./assets/img/mozilla_dev.png" />
                         </div>
                         <p>
                             Mozila developper : <br /><br />
@@ -33,14 +33,14 @@
                             Ce site permet de valider une page html/css aux standards du world wide web consortium, ainsi que de détecter quelques bugs qui auraient pu se glisser dans vos pages.
                         </p>
                         <div>
-                            <img src="./assets/img/W3C_vali.png" />
+                            <img draggable="false" src="./assets/img/W3C_vali.png" />
                         </div>
                     </li>
                 </a>
                 <a href="https://flexboxfroggy.com/#fr" target="_blank" draggable="false">
                     <li>
                         <div>
-                            <img src="./assets/img/froggy_flexbox.png" />
+                            <img draggable="false" src="./assets/img/froggy_flexbox.png" />
                         </div>
                         <p>
                             Flexbox Froggy : <br /> <br />
@@ -56,7 +56,7 @@
                             Dans la même veine que flexbox froggy, voici grid garden. Un petit jeu permettant de s'exercer sur le concept des grilles de manière ludique.
                         </p>
                         <div>
-                            <img src="./assets/img/grid_garden.png" />
+                            <img draggable="false" src="./assets/img/grid_garden.png" />
                         </div>
                     </li>
                 </a>
@@ -68,7 +68,7 @@
                 <a href="https://www.php.net/" target="_blank" draggable="false">
                     <li>
                         <div>
-                            <img src="./assets/img/php.png" />
+                            <img draggable="false" src="./assets/img/php.png" />
                         </div>
                         <p>
                             PHP.net : <br /><br />
@@ -83,14 +83,14 @@
                             Pour créer, vérifier, apprendre, comprendre... Il faut tester! Après ces quelques mois à essayer d'approfondir des notions, mon maître-mot est devenu : tester. Toujours tester, pour bien vérifier que le comportement, la variable, la condition, la fonction, fasse bien ce à quoi on s'attendait qu'elle fasse.
                         </p>
                         <div>
-                            <img src="./assets/img/phptester.png" />
+                            <img draggable="false" src="./assets/img/phptester.png" />
                         </div>
                     </li>
                 </a>
                 <a href="https://extendsclass.com/php.html" target="_blank" draggable="false">
                     <li>
                         <div>
-                            <img src="./assets/img/extend_class.png" />
+                            <img draggable="false" src="./assets/img/extend_class.png" />
                         </div>
                         <p>
                             Extends Class PHP Tester : <br /><br />
@@ -111,7 +111,7 @@
                             Vous y commencez Kyu 7 et le plus haut niveau est le Dan 2 (Kyu 7,6,5,4,3,2,1 puis Dan 1,2). Le but étant de résoudre des petits exercices à l'apparence simple sous forme de Kata (de même niveau que les rangs). Ces exercices sont bien et aident grandement à progresser.
                         </p>
                         <div>
-                            <img src="./assets/img/codewars.png" />
+                            <img draggable="false" src="./assets/img/codewars.png" />
                         </div>
                     </li>
                 </a>
@@ -123,7 +123,7 @@
                 <a href="https://github.com/" target="_blank" draggable="false">
                     <li>
                         <div>
-                            <img src="./assets/img/git.png" />
+                            <img draggable="false" src="./assets/img/git.png" />
                         </div>
                         <p>
                             Github : <br /><br />

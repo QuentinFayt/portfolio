@@ -43,13 +43,13 @@ body {
   box-shadow: inset 0 0 5px grey;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--MV_color);
+  background: var(--M_color);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--M_color);
+  background: var(--MV_color);
 }
 ::-webkit-scrollbar-thumb:active {
-  background: var(--M_color);
+  background: var(--MV_color);
 }
 /*============================Nav============================*/
 nav {
@@ -186,9 +186,15 @@ main p {
 }
 .homepage {
   display: grid;
-  grid-template-columns: 1fr 300px 1fr;
+  grid-template-columns: 1fr 20vw 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    ". . up"
+    "pres img guest"
+    ". . down";
   margin: 5vh auto;
-  gap: 1vw;
+  column-gap: 1vw;
+  row-gap: 10px;
 }
 .presentation,
 .portGuestbook {
@@ -205,14 +211,35 @@ main p {
 .homepage section div p {
   margin: 0;
 }
+.presentation {
+  grid-area: pres;
+}
 .circle {
   width: 100%;
+  grid-area: img;
 }
 .portGuestbook {
+  grid-area: guest;
   position: relative;
   perspective: 1000px;
   width: 100%;
   overflow: hidden;
+}
+.up,
+.down {
+  width: 10%;
+  margin: 0 auto;
+  transition: 100ms;
+}
+.up:hover,
+.down:hover {
+  transform: scale(1.2);
+}
+.up {
+  grid-area: up;
+}
+.down {
+  grid-area: down;
 }
 .portGuestBookContainer {
   width: 100%;

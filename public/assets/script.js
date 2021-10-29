@@ -153,12 +153,20 @@ function mouseWheelDirection(e) {
 function directionProcess(direction) {
   switch (direction) {
     case "up":
-      selectedIndex++;
+      selectedIndex--;
       rotateCarousel();
       break;
     case "down":
-      selectedIndex--;
+      selectedIndex++;
       rotateCarousel();
       break;
   }
 }
+document.querySelector(".up").addEventListener("click", () => {
+  selectedIndex--;
+  rotateCarousel();
+});
+document.querySelector(".down").addEventListener("click", () => {
+  selectedIndex++;
+  rotateCarousel();
+});
