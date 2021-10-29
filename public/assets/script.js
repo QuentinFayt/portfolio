@@ -23,8 +23,6 @@ function toggleForm() {
   button.style.display = "none";
 }
 
-document.querySelector(".formDisplay").addEventListener("click", toggleForm);
-/*Mail load video*/
 function mailEdit() {
   let video = document.querySelector(".mailE");
 
@@ -105,7 +103,6 @@ let container = document.querySelector(".portGuestBookContainer");
 let cells = document.querySelectorAll(".cell");
 let cellCount = cells.length;
 let selectedIndex = 0;
-let cellWidth = container.offsetWidth;
 let cellHeight = container.offsetHeight;
 let rotateFn = "rotateX";
 let radius, theta;
@@ -182,3 +179,4 @@ document.querySelector(".down").addEventListener("click", () => {
   selectedIndex++;
   rotateCarousel();
 });
+document.querySelector(".formDisplay").addEventListener("click", toggleForm);

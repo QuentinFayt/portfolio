@@ -34,8 +34,23 @@
                             <h3>Message de <?= $message["userGuestB"] ?>:</h3>
                             <p><?= $message["textGuestB"] ?></p>
                         </div>
-                <?php
+                    <?php
                     }
+                } else {
+                    ?>
+                    <div class="cell">
+                        <h3>Message de :</h3>
+                        <p>No message yet</p>
+                    </div>
+                    <div class="cell">
+                        <h3>Message de :</h3>
+                        <p>No message yet</p>
+                    </div>
+                    <div class="cell">
+                        <h3>Message de :</h3>
+                        <p>No message yet</p>
+                    </div>
+                <?php
                 }
                 ?>
             </div>

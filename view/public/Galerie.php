@@ -14,7 +14,7 @@
                         <p>Site réalisé pour la préformation au CF2M</p>
                         <p>Le but de l'exercice était de réaliser un site à charte libre, avec du contenu imposés par pages, afin de prouver notre motivation pour suivre la formation qualifiante.</p>
                     </div>
-                    <a href="http://quentin.webdev-cf2m.be/prefo/index.html" target="_blank">http://quentin.webdev-cf2m.be/prefo/index.html</a>
+                    <a href="https://quentin.webdev-cf2m.be/prefo/index.html" target="_blank">https://quentin.webdev-cf2m.be/prefo/index.html</a>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                         <p>Suite à la préformation, j'avais envie de me lancer des exercices/challenges pendant les vacances en programmation.</p>
                         <p>J'ai donc réalisé une calculatrice</p>
                     </div>
-                    <a href="http://quentin.webdev-cf2m.be/exercices_persos/calculatrice/calculatrice.html" target="_blank">http://quentin.webdev-cf2m.be/exercices-persos/calculatrice/calculatrice.html</a>
+                    <a href="https://quentin.webdev-cf2m.be/exercices_persos/calculatrice/calculatrice.html" target="_blank">https://quentin.webdev-cf2m.be/exercices-persos/calculatrice/calculatrice.html</a>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                         <p>Suite à la préformation, j'avais envie de me lancer des exercices/challenges pendant les vacances en programmation.</p>
                         <p>J'ai donc réalisé un jeux en javascript orienté objet et en console. Pour y jouer, cliquez sur la touche F12 de votre clavier</p>
                     </div>
-                    <a href="http://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html" target="_blank">http://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html</a>
+                    <a href="https://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html" target="_blank">https://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html</a>
                 </div>
             </div>
         </div>
