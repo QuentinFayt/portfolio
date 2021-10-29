@@ -12,6 +12,18 @@ function toggle() {
         }, 500)
       : "block";
 }
+function toggleForm() {
+  let button = document.querySelector(".formDisplay");
+  let form = document.querySelector(".formGuestBook");
+
+  form.className =
+    form.className === "formGuestBook"
+      ? "formGuestBook visible"
+      : "formGuestBook";
+  button.style.display = "none";
+}
+
+document.querySelector(".formDisplay").addEventListener("click", toggleForm);
 /*Mail load video*/
 function mailEdit() {
   let video = document.querySelector(".mailE");
