@@ -26,41 +26,36 @@
         <img src="./assets/img/triangle.png" class="profilePic" draggable="false" />
         <section class="portGuestbook">
             <div class="portGuestBookContainer">
-                <div class="cell">
-                    <h3>Message de Mr Patate:</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nesciunt eligendi cumque illo asperiores quae ab facere delectus accusamus eveniet sequi, temporibus explicabo minima, sapiente soluta provident nulla debitis ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-                <div class="cell">
-                    <h3>Message de Mme Patate:</h3>
-                    <p>
-                        Culpa sed minus eaque asperiores illo et reiciendis aliquam quidem? Iusto consequatur dolorum a, iste voluptatum eveniet minus sint quod animi consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure iusto reprehenderit impedit laudantium deserunt voluptatibus vitae nihil sapiente minus, harum est sed enim quasi quisquam?
-                    </p>
-                </div>
-                <div class="cell">
-                    <h3>Message de petite Patate:</h3>
-                    <p>
-                        Culpa sed minus eaque asperiores illo et reiciendis aliquam quidem? Iusto consequatur dolorum a, iste voluptatum eveniet minus sint quod animi consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure iusto reprehenderit impedit laudantium deserunt voluptatibus vitae nihil sapiente minus, harum est sed enim quasi quisquam?
-                    </p>
-                </div>
-                <div class="cell">
-                    <p>
-                        Culpa sed minus eaque asperiores illo et reiciendis aliquam quidem? Iusto consequatur dolorum a, iste voluptatum eveniet minus sint quod animi consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure iusto reprehenderit impedit laudantium deserunt voluptatibus vitae nihil sapiente minus, harum est sed enim quasi quisquam?
-                    </p>
-                </div>
-                <div class="cell">
-                    <p>
-                        Culpa sed minus eaque asperiores illo et reiciendis aliquam quidem? Iusto consequatur dolorum a, iste voluptatum eveniet minus sint quod animi consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure iusto reprehenderit impedit laudantium deserunt voluptatibus vitae nihil sapiente minus, harum est sed enim quasi quisquam?
-                    </p>
-                </div>
-                <div class="cell">
-                    <p>
-                        Est alias repudiandae similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit, porro suscipit commodi eum unde cupiditate quasi dolor nulla voluptatibus reiciendis nam, iure totam corporis! Optio est repellendus error sapiente!
-                    </p>
-                </div>
+                <?php
+                if (isset($messages)) {
+                    foreach ($messages as $message) {
+                ?>
+                        <div class="cell">
+                            <h3>Message de <?= $message["userGuestB"] ?>:</h3>
+                            <p><?= $message["textGuestB"] ?></p>
+                        </div>
+                <?php
+                    }
+                }
+                ?>
             </div>
         </section>
         <img src="./assets/img/arrowDown.png" class="down" draggable="false" />
+    </article>
+    <article class="articleGuestBook">
+        <p class="formDisplay">Vous voulez rajouter un message sur mon portfolio?</p>
+        <form class="formGuestBook" method="POST" action="">
+            <div>
+                <label for="guestBookName">Nom:</label>
+                <input id="guestBookName" type="text" max="50" placeholder="Votre Nom" name="userGuestBookName" required></input>
+            </div>
+            <div>
+                <label for="guestBookText">Votre message:</label>
+                <textarea id="guestBookText" type="textarea" max="370" name="userGuestBookText" placeholder="Votre message" required></textarea>
+            </div>
+            <div class="buttonGuestBook">
+                <input type="submit" value="Envoyer" class="buttonGuestBook"></input>
+            </div>
+        </form>
     </article>
 </main>

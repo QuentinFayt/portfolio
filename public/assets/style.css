@@ -279,6 +279,48 @@ main p {
 .cell:nth-child(6) {
   transform: rotateX(300deg) translateZ(226px);
 }
+.formGuestBook {
+  display: none;
+  width: 40vw;
+  margin: 2vh auto;
+  background-color: var(--T_background);
+  box-shadow: 20px 20px var(--BS_color);
+  padding: 1vw;
+}
+.visible {
+  display: block;
+}
+.formGuestBook div {
+  display: flex;
+  justify-content: center;
+  margin: 1vw;
+}
+.formGuestBook div label {
+  text-align: center;
+  flex: 1;
+}
+.formGuestBook div input,
+.formGuestBook div textarea {
+  flex: 3;
+  color: black;
+}
+.formGuestBook div textarea {
+  height: 20vh;
+  resize: none;
+}
+.formGuestBook .buttonGuestBook {
+  display: block;
+  margin: 1vw auto;
+  width: 100%;
+}
+.formGuestBook .buttonGuestBook input {
+  width: 30%;
+}
+.formDisplay {
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
 /*===============CV===============*/
 .CV {
   background: linear-gradient(180deg, var(--MV_color) 35%, var(--M_color) 100%);
@@ -862,7 +904,9 @@ main p {
     margin: 1vh auto;
     display: block;
   }
-
+  .formGuestBook {
+    width: 50vw;
+  }
   /*===============CV===============*/
   .content ul li {
     font-size: 1.5vw;
@@ -1097,17 +1141,23 @@ main p {
     margin: 10px 8vw;
   }
   /*============================Main============================*/
-  /*===============homepage===============*/
-  .title {
-    display: block;
-    flex-basis: unset;
-    width: 80%;
-    margin: 4vh auto;
-  }
+  .contact,
+  .loginT,
+  .mainLiens h1,
+  .mainTuto h1,
+  .mainGalerie h1,
+  .mainCV h1,
   .title h1 {
-    font-size: 6vw;
+    height: unset;
+    line-height: unset;
+    flex-basis: unset;
+    display: block;
+    width: 80vw;
+    margin: 4vh auto;
     text-align: center;
+    font-size: 10vw;
   }
+  /*===============homepage===============*/
   .homepage {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto 1fr auto;
@@ -1119,8 +1169,8 @@ main p {
   }
   .presentation,
   .portGuestbook {
-    max-width: 40ch;
-    font-size: 2vw;
+    max-width: 50ch;
+    font-size: 3vw;
   }
   .profilePic {
     display: none;
@@ -1129,6 +1179,11 @@ main p {
     width: 30%;
     margin: 1vh auto;
     display: block;
+  }
+  .formGuestBook {
+    width: 80vw;
+    margin: 6vh auto;
+    box-shadow: unset;
   }
   /*===============CV===============*/
   .content {
@@ -1145,11 +1200,6 @@ main p {
     visibility: visible;
     opacity: 1;
     top: -2vh;
-  }
-  .mainCV h1 {
-    display: block;
-    width: 80vw;
-    margin: 0 auto;
   }
   .CV {
     width: 90vw;
@@ -1189,11 +1239,6 @@ main p {
     font-size: 2.5vw;
   }
   /*===============Galerie===============*/
-  .mainGalerie h1 {
-    display: block;
-    width: 80vw;
-    margin: 0 auto;
-  }
   .galerie {
     grid-template-columns: 1fr;
     gap: 4em 0;
@@ -1225,11 +1270,6 @@ main p {
     background-image: url("./img/rpg.png");
   }
   /*===============Tutoriels===============*/
-  .mainTuto h1 {
-    display: block;
-    width: 80vw;
-    margin: 0 auto;
-  }
   .tutos {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -1244,7 +1284,6 @@ main p {
     box-shadow: unset;
   }
   /*===============Liens===============*/
-  .mainTuto h1,
   .liens section h2 {
     display: block;
     width: 80vw;
@@ -1281,10 +1320,6 @@ main p {
     width: 100%;
   }
   /*===============Contact===============*/
-  .contact {
-    height: unset;
-    line-height: unset;
-  }
   .mailE,
   .mailS {
     display: none;
