@@ -3,7 +3,7 @@
 <main class="mainCV">
     <h1>Curriculum Vitae | <span class="darkerMainColor">Quentin<span> <span class="mainColor">Fayt</span></h1>
     <article class="CV">
-        <img class="circleCV" src="./assets/img/circle_P.png" alt="circle" />
+        <img class="circleCV" src="./assets/img/circle_P.png" alt="circle" draggable="false" />
         <section>
             <div class="titreCV">
                 <h2>Web-Développeur</h2>
