@@ -214,9 +214,12 @@ main p {
 .presentation {
   grid-area: pres;
 }
-.circle {
+.profilePic {
   width: 100%;
   grid-area: img;
+}
+.profilePicM {
+  display: none;
 }
 .portGuestbook {
   grid-area: guest;
@@ -844,6 +847,22 @@ main p {
   }
   /*============================Main============================*/
   /*===============homepage===============*/
+  .homepage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      ". up"
+      "pres guest"
+      " . down";
+  }
+  .profilePic {
+    display: none;
+  }
+  .profilePicM {
+    width: 30%;
+    margin: 1vh auto;
+    display: block;
+  }
+
   /*===============CV===============*/
   .content ul li {
     font-size: 1.5vw;
@@ -1079,7 +1098,38 @@ main p {
   }
   /*============================Main============================*/
   /*===============homepage===============*/
-
+  .title {
+    display: block;
+    flex-basis: unset;
+    width: 80%;
+    margin: 4vh auto;
+  }
+  .title h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .homepage {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr auto;
+    grid-template-areas:
+      "pres"
+      "up"
+      "guest"
+      "down";
+  }
+  .presentation,
+  .portGuestbook {
+    max-width: 40ch;
+    font-size: 3vw;
+  }
+  .profilePic {
+    display: none;
+  }
+  .profilePicM {
+    width: 30%;
+    margin: 1vh auto;
+    display: block;
+  }
   /*===============CV===============*/
   .content {
     margin: 2vh 0 0 2vw;
