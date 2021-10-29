@@ -1120,7 +1120,7 @@ main p {
   .presentation,
   .portGuestbook {
     max-width: 40ch;
-    font-size: 3vw;
+    font-size: 2vw;
   }
   .profilePic {
     display: none;
@@ -1343,6 +1343,11 @@ main p {
     .liens section ul a li p {
       font-size: 3vw;
     }
+    .presentation,
+    .portGuestbook {
+      max-width: 50ch;
+      font-size: 4vw;
+    }
     @media screen and (max-width: 350px) {
       .presentation p {
         font-size: 5vw;
@@ -1366,6 +1371,11 @@ main p {
       }
       .wrong p {
         font-size: 4vw;
+      }
+      .presentation,
+      .portGuestbook {
+        max-width: 30ch;
+        font-size: 5vw;
       }
     }
   }
