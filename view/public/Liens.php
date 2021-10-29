@@ -23,7 +23,7 @@
             </ul>
         </section>
         <section>
-            <h2>Correcteur orthographique du css / html et petits jeux sur les flex-box et grid</h2>
+            <h2>Correcteur syntaxique pour votre css / html et petits jeux sur les flex-box et grid</h2>
             <ul>
                 <a href="https://validator.w3.org/" target="_blank" draggable="false">
                     <li>
@@ -107,7 +107,7 @@
                     <li>
                         <p>
                             Code Wars : <br /> <br />
-                            Testez s'est bien, mais s'exercer c'est mieux! Code Wars est un site qui propose des exercices dans énormément de langages et ce sur plusieurs exercices, divers et variés.
+                            Testez c'est bien, mais s'exercer c'est mieux! Code Wars est un site qui propose des exercices dans énormément de langages et ce sur plusieurs exercices, divers et variés.
                             Vous y commencez Kyu 7 et le plus haut niveau est le Dan 2 (Kyu 7,6,5,4,3,2,1 puis Dan 1,2). Le but étant de résoudre des petits exercices à l'apparence simple sous forme de Kata (de même niveau que les rangs). Ces exercices sont bien et aident grandement à progresser.
                         </p>
                         <div>
