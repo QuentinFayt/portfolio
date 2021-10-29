@@ -56,8 +56,8 @@
                     <h3>Projet personnel : Calculatrice</h3>
                     <div class="text">
                         <p>Site réalisé lors de mes vacances de l'été 2021</p>
-                        <p>Suite à la préformation, j'avais envie de me lancer des petits exercices/challenges pendant les vacances en programmation.</p>
-                        <p>J'ai donc réalisé une petite calculatrice</p>
+                        <p>Suite à la préformation, j'avais envie de me lancer des exercices/challenges pendant les vacances en programmation.</p>
+                        <p>J'ai donc réalisé une calculatrice</p>
                     </div>
                     <a href="http://quentin.webdev-cf2m.be/exercices_persos/calculatrice/calculatrice.html" target="_blank">http://quentin.webdev-cf2m.be/exercices-persos/calculatrice/calculatrice.html</a>
                 </div>
@@ -71,8 +71,8 @@
                     <h3>Projet personnel : RPG console</h3>
                     <div class="text">
                         <p>Site réalisé lors de mes vacances de l'été 2021</p>
-                        <p>Suite à la préformation, j'avais envie de me lancer des petits exercices/challenges pendant les vacances en programmation.</p>
-                        <p>J'ai donc réalisé un petit jeux en javascript orienté objet et en console. Pour y jouer, cliquez sur la touche F12 de votre clavier</p>
+                        <p>Suite à la préformation, j'avais envie de me lancer des exercices/challenges pendant les vacances en programmation.</p>
+                        <p>J'ai donc réalisé un jeux en javascript orienté objet et en console. Pour y jouer, cliquez sur la touche F12 de votre clavier</p>
                     </div>
                     <a href="http://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html" target="_blank">http://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html</a>
                 </div>

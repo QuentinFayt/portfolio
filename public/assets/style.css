@@ -458,7 +458,7 @@ main p {
   background-image: url("./img/moi.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0vh -2vw;
+  background-position-y: 0vh;
   border-radius: 50%;
   width: 20%;
   visibility: hidden;
