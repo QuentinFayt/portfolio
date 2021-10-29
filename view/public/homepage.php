@@ -62,11 +62,11 @@
         <form class="formGuestBook" method="POST" action="">
             <div>
                 <label for="guestBookName">Nom:</label>
-                <input id="guestBookName" type="text" max="50" placeholder="Votre Nom" name="userGuestBookName" required></input>
+                <input id="guestBookName" type="text" max="50" placeholder="Votre Nom (max 50 caractères)" name="userGuestBookName" required></input>
             </div>
             <div>
                 <label for="guestBookText">Votre message:</label>
-                <textarea id="guestBookText" type="textarea" max="370" name="userGuestBookText" placeholder="Votre message" required></textarea>
+                <textarea id="guestBookText" type="textarea" max="370" name="userGuestBookText" placeholder="Votre message (max 370 caractères)" required></textarea>
             </div>
             <div class="buttonGuestBook">
                 <input type="submit" value="Envoyer" class="buttonGuestBook"></input>
