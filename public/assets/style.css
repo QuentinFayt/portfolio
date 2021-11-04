@@ -147,6 +147,10 @@ footer {
   grid-area: foot;
   border-top: 3px solid var(--T_background);
   width: 100%;
+  background-color: var(--B_background);
+  height: 25px;
+  position: sticky;
+  bottom: 0;
 }
 .right {
   margin: 0;
@@ -1157,6 +1161,11 @@ main p {
     text-align: center;
     font-size: 10vw;
   }
+  #rc-imageselect,
+  .g-recaptcha {
+    transform: scale(0.9);
+  }
+
   /*===============homepage===============*/
   .homepage {
     grid-template-columns: 1fr;
@@ -1332,10 +1341,6 @@ main p {
   .contactForm {
     box-shadow: none;
     width: 90vw;
-    height: 80vh;
-  }
-  .contactForm div {
-    margin: 5vh 5vw;
   }
   .contactForm .buttonContact {
     display: block;

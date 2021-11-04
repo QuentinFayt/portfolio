@@ -9,7 +9,7 @@
         <img class="foot_log mobile2" src="./assets/img/linkedin.png" alt="linkedin" />
         <p>Linkedin</p>
     </a>
-    <p class="right mobile3">Réalisé par Quentin Fayt | 2021</p>
+    <p class="right mobile3 portfolioFont">Réalisé par Quentin Fayt | 2021</p>
 </footer>
 
 </body>

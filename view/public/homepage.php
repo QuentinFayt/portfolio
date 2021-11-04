@@ -7,7 +7,7 @@
             include "./assets/img/logo.svg"
             ?>
         </div>
-        <h1><span class="mainColor portfolioFont">Portfolio<span> | Accueil</h1>
+        <h1><span class="mainColor portfolioFont">Portfolio</span> | <span class="darkerMainColor">Accueil</span></h1>
     </div>
     <img src="./assets/img/triangle.png" class="profilePicM" draggable="false" />
     <article class="homepage">
@@ -68,6 +68,7 @@
                 <label for="guestBookText">Votre message:</label>
                 <textarea id="guestBookText" type="textarea" max="370" name="userGuestBookText" placeholder="Votre message (max 370 caractères)" required></textarea>
             </div>
+            <div class="g-recaptcha" data-sitekey="<?= CAPTCHA_USER ?>"></div>
             <div class="buttonGuestBook">
                 <input type="submit" value="Envoyer" class="buttonGuestBook"></input>
             </div>

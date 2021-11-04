@@ -1,7 +1,7 @@
 <?php
 ?>
 <main class="mainGalerie">
-    <h1>Galerie de projets</h1>
+    <h1><span class="mainColor portfolioFont">Galerie</span> de <span class="darkerMainColor">projets</span></h1>
 
     <article class="galerie">
         <div class="project">

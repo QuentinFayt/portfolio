@@ -1,7 +1,7 @@
 <?php
 ?>
 <main>
-    <h1 class="loginT">Log in</h1>
+    <h1 class="loginT portfolioFont mainColor">Log in</h1>
     <article>
         <form method="POST" action="" class="login">
             <?php

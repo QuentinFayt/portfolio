@@ -14,6 +14,7 @@
     ?>
     <link rel="icon" href="./assets/img/logo.ico" />
     <link href="./assets/style.css" rel="stylesheet" />
+    <script src='https://www.google.com/recaptcha/api.js' defer async></script>
     <script src="./assets/script.js" defer></script>
     <title>
         PortFolio |
@@ -26,7 +27,7 @@
             }
         } else {
             echo isset($_GET["p"]) && in_array($_GET["p"], WHITE_LIST) ? $_GET["p"] : "Accueil";
-        } //change title with pages
+        }
         ?>
     </title>
 </head>
