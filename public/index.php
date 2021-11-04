@@ -3,11 +3,12 @@ session_start();
 
 require_once "../config/config.php";
 
+include "../controller/helper.php";
+
 require_once "../model/datasFromDB.php";
 
 include "../controller/login.php";
 
-include "../controller/helper.php";
 include "../controller/mail.php";
 
 require_once "../view/public/head.php";
