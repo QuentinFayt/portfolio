@@ -228,7 +228,7 @@ main p {
 .portGuestbook {
   grid-area: guest;
   position: relative;
-  perspective: 1000px;
+  perspective: 2000px;
   width: 100%;
   overflow: hidden;
 }
@@ -259,10 +259,10 @@ main p {
 .cell {
   position: absolute;
   width: 90%;
+  top: 5%;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 10%;
   transition: transform 1s, opacity 1s;
 }
 .cell:nth-child(1) {
