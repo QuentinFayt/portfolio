@@ -1,7 +1,7 @@
 <?php
 ?>
 <main class="mainTuto">
-    <h1>Tutoriels | <span class="darkerMainColor">Drag</span> & <span class="mainColor">Drop</span> Natif HTML5</h1>
+    <h1><span class="mainColor portfolioFont">Tutoriels</span> | <span class="darkerMainColor">Drag & Drop Natif HTML5 </span></h1>
 
     <section class="tutos">
         <div class="tuto tuto1" draggable="true">

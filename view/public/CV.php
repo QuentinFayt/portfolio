@@ -1,7 +1,7 @@
 <?php
 ?>
 <main class="mainCV">
-    <h1>Curriculum Vitae | <span class="darkerMainColor">Quentin<span> <span class="mainColor">Fayt</span></h1>
+    <h1><span class="mainColor portfolioFont">Curriculum Vitae</span> | <span class="darkerMainColor">Quentin Fayt</span></h1>
     <article class="CV">
         <img class="circleCV" src="./assets/img/circle_P.png" alt="circle" draggable="false" />
         <section>
@@ -56,7 +56,7 @@
                             Web-Développement
                         </li>
                     </ul>
-                    <p>2025 - 2018 • Formation • IFAPME </p>
+                    <p>2015 - 2018 • Formation • IFAPME </p>
                     <ul>
                         <li>
                             Réalisation audio-visuel

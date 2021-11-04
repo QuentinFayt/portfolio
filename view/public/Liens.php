@@ -1,7 +1,7 @@
 <?php
 ?>
 <main class="mainLiens">
-    <h1>Liens</h1>
+    <h1 class="mainColor portfolioFont">Liens</h1>
     <article class="liens">
         <section>
             <h2>Une bible pour l'html / css / javascript</h2>

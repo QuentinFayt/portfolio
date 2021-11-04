@@ -9,7 +9,7 @@
                 <source src="./assets/img/mail_1.mp4" type="video/mp4">
             </video>
         <?php
-        } elseif (isset($_POST["user_name"]) && isset($_POST["user_mail"]) && isset($_POST["user_message"])) {
+        } elseif (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']) && isset($_POST["user_name"]) && isset($_POST["user_mail"]) && isset($_POST["user_message"])) {
         ?>
             <video autoplay muted class="mailS">
                 <source src="./assets/img/mail_2.mp4" type="video/mp4">
@@ -24,7 +24,7 @@
         }
         ?>
     </label>
-    <h1 class="contact">Contact</h1>
+    <h1 class="contact portfolioFont mainColor">Contact</h1>
     <img class="contactImg" src="./assets/img/mail.png" alt="mail" />
     <article>
         <form method="POST" action="" class="contactForm">
@@ -40,6 +40,7 @@
                 <label for="message">Votre message:</label>
                 <textarea id="message" type="textarea" name="user_message" placeholder="Enter your message" oninput="mailEdit()" required></textarea>
             </div>
+            <div class="g-recaptcha" data-sitekey="<?= CAPTCHA_USER ?>"></div>
             <div class="buttonContact">
                 <input type="submit" value="Envoyer" />
             </div>
