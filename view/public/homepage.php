@@ -14,12 +14,25 @@
         <img src="./assets/img/arrowUp.png" class="up" draggable="false" />
         <section class="presentation">
             <div class="check">
-                <h3>Ma présentation:</h3>
+                <h3>La <span class="mainColor">curiosité</span> est-elle vraiment un vilain défaut?</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pharetra posuere neque sit amet
-                    volutpat. Duis finibus interdum facilisis. Morbi vel sapien sed dolor hendrerit placerat id a dui. Integer
-                    accumsan, arcu et rutrum efficitur, magna augue tempor quam, vel commodo diam nibh aliquam ex.
-                    Curabitur odio leo, vulputate quis ligula vitae, venenatis aliquet lectus. In hac habitasse platea dictumst. Phasellus quis egestas lacus, sit amet dapibus diam. Donec nec ultrices metus.
+                    Après le développement de plusieurs projets, je me suis souvent poser des questions sur telle ou telle concept/technologie. Au point de souvent être considéré comme trop <span class="mainColor">curieux<span>.
+                </p>
+                <p>
+                    Mais je pense que c'est justement ma <span class="mainColor">curiosité</span>, ainsi que ma <span class="mainColor">ténacité</span> à vouloir résoudre un problème, qui m'ont permis de toujours aller plus loin et à souvent transgresser les consignes qui m'avaient été données.
+                </p>
+                <p>
+                    Ma <span class="mainColor">curiosité</span> est une <span class="mainColor">clef</span> qui m'a ouvert beaucoup de portes de <span class="mainColor">compréhension</span>, quant à diverses matières ou concepts de programmation.
+                </p>
+                <p>
+                    Dans le monde du développement, la <span class="mainColor">curiosité</span> n'est-elle donc pas plutôt une <span class="mainColor">qualité</span> ?
+                </p>
+                </br>
+                <p class="center">
+                    Je m'appelle <span class="mainColor">Quentin Fayt</span>,
+                </p>
+                <p class="center">
+                    <span class="mainColor">web-développeur curieux</span>.
                 </p>
             </div>
         </section>

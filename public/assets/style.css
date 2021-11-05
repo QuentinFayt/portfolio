@@ -215,6 +215,18 @@ main p {
 .homepage section div p {
   margin: 0;
 }
+.homepage .presentation .check h3 {
+  text-decoration: underline;
+  text-align: center;
+  margin: 1vh 0 2vh 0;
+}
+.homepage .presentation .check p {
+  text-indent: 10%;
+}
+.homepage .presentation .check .center {
+  text-indent: unset;
+  text-align: center;
+}
 .presentation {
   grid-area: pres;
 }
