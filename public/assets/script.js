@@ -87,11 +87,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     box.addEventListener("dragend", dragEnd, false);
   });
 });
+/*=============================Resize Wheel Container=============================*/
 function resizeBoxes() {
   let check = document.querySelector(".check").clientHeight;
-  let presentation = document.querySelector(".presentation");
   let guestbook = document.querySelector(".portGuestbook");
-  presentation.style.height = `${check}px`;
   guestbook.style.height = `${check}px`;
 }
 
