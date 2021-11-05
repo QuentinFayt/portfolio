@@ -14,7 +14,7 @@
                         <p>Site réalisé pour la préformation au CF2M</p>
                         <p>Le but de l'exercice était de réaliser un site à charte libre, avec du contenu imposés par pages, afin de prouver notre motivation pour suivre la formation qualifiante.</p>
                     </div>
-                    <a href="https://quentin.webdev-cf2m.be/prefo/index.html" target="_blank">https://quentin.webdev-cf2m.be/prefo/index.html</a>
+                    <a href="https://quentin.webdev-cf2m.be/projets/prefo/index.html" target="_blank">https://quentin.webdev-cf2m.be/projets/prefo/index.html</a>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
                         <p>Le but de l'exercice était de mélanger les bases en php, sql, html et css pour réaliser un livre d'or. J'ai été légèrement plus loin que l'exercice demandé (notament en rajoutant une session admin)</p>
                         <p>(La partie php/sql sera mise en ligne lorsque j'aurais accès à la base de donnée)</p>
                     </div>
-                    <a href="https://quentin.webdev-cf2m.be/guest-book/public/" target="_blank">https://quentin.webdev-cf2m.be/guest-book/public/</a>
+                    <a href="https://quentin.webdev-cf2m.be/projets/guest-book/public/" target="_blank">https://quentin.webdev-cf2m.be/projets/guest-book/public/</a>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
                         <p>Le but de l'exercice était de refaire le site sur Bruxelles avec une charte graphique imposée avec une limite de temps de 6 heures pour le réaliser.</p>
                         <p>Suite à ça, nous avons du le rendre responsive avec plusieurs configurations imposées</p>
                     </div>
-                    <a href="https://quentin.webdev-cf2m.be/london/public/index.php" target="_blank">https://quentin.webdev-cf2m.be/london/</a>
+                    <a href="https://quentin.webdev-cf2m.be/projets/london/public/index.php" target="_blank">https://quentin.webdev-cf2m.be/projets/london/</a>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                         <p>Suite à la préformation, j'avais envie de me lancer des exercices/challenges pendant les vacances en programmation.</p>
                         <p>J'ai donc réalisé une calculatrice</p>
                     </div>
-                    <a href="https://quentin.webdev-cf2m.be/exercices_persos/calculatrice/calculatrice.html" target="_blank">https://quentin.webdev-cf2m.be/exercices-persos/calculatrice/calculatrice.html</a>
+                    <a href="https://quentin.webdev-cf2m.be/projets/exercices_persos/calculatrice/calculatrice.html" target="_blank">https://quentin.webdev-cf2m.be/projets/exercices-persos/calculatrice/calculatrice.html</a>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                         <p>Suite à la préformation, j'avais envie de me lancer des exercices/challenges pendant les vacances en programmation.</p>
                         <p>J'ai donc réalisé un jeux en javascript orienté objet et en console. Pour y jouer, cliquez sur la touche F12 de votre clavier</p>
                     </div>
-                    <a href="https://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html" target="_blank">https://quentin.webdev-cf2m.be/exercices_persos/rpg/index.html</a>
+                    <a href="https://quentin.webdev-cf2m.be/projets/exercices_persos/rpg/index.html" target="_blank">https://quentin.webdev-cf2m.be/projets/exercices_persos/rpg/index.html</a>
                 </div>
             </div>
         </div>
