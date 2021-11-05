@@ -44,8 +44,10 @@
                     foreach ($messages as $message) {
                 ?>
                         <div class="cell">
-                            <h3>Message de <?= $message["userGuestB"] ?>:</h3>
-                            <p><?= $message["textGuestB"] ?></p>
+                            <div>
+                                <h3>Message de <?= $message["userGuestB"] ?>:</h3>
+                                <p><?= $message["textGuestB"] ?></p>
+                            </div>
                         </div>
                     <?php
                     }

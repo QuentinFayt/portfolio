@@ -101,21 +101,17 @@ window.addEventListener("resize", resizeBoxes);
 /*=============================Wheel=============================*/
 let container = document.querySelector(".portGuestBookContainer");
 let cells = document.querySelectorAll(".cell");
-let cellCount = cells.length;
-let selectedIndex = 0;
-let cellHeight = container.offsetHeight;
+let cellCount = cells.length; //number of cells
+let selectedIndex = 0; //number of actual cell
+let cellHeight = container.offsetHeight; //cellHeight
 let rotateFn = "rotateX";
 let radius, theta;
 
-function rotateCarousel() {
+function rotateWheel() {
   let angle = theta * selectedIndex * -1;
   container.style.transform =
-    "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
+    "translateZ(" + -radius + "px)" + rotateFn + "(" + angle + "deg)";
 }
-/* window.addEventListener("wheel", () => {
-  selectedIndex--;
-  rotateCarousel();
-}); */
 
 function changeCarousel() {
   theta = 360 / cellCount;
@@ -123,18 +119,16 @@ function changeCarousel() {
   for (let i = 0; i < cellCount; i++) {
     let cell = cells[i];
     if (i < cellCount) {
-      // visible cell
       cell.style.opacity = 1;
       let cellAngle = theta * i;
       cell.style.transform =
         rotateFn + "(" + cellAngle + "deg) translateZ(" + radius + "px)";
     } else {
-      // hidden cell
       cell.style.opacity = 0;
       cell.style.transform = "none";
     }
   }
-  rotateCarousel();
+  rotateWheel();
 }
 changeCarousel();
 /*=============================Scroll Direction=============================*/
@@ -163,20 +157,20 @@ function directionProcess(direction) {
   switch (direction) {
     case "up":
       selectedIndex--;
-      rotateCarousel();
+      rotateWheel();
       break;
     case "down":
       selectedIndex++;
-      rotateCarousel();
+      rotateWheel();
       break;
   }
 }
 document.querySelector(".up").addEventListener("click", () => {
   selectedIndex--;
-  rotateCarousel();
+  rotateWheel();
 });
 document.querySelector(".down").addEventListener("click", () => {
   selectedIndex++;
-  rotateCarousel();
+  rotateWheel();
 });
 document.querySelector(".formDisplay").addEventListener("click", toggleForm);
