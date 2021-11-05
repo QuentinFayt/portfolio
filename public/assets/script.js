@@ -99,44 +99,7 @@ document.addEventListener("DOMContentLoaded", resizeBoxes);
 window.addEventListener("resize", resizeBoxes);
 
 /*=============================Wheel=============================*/
-let container = document.querySelector(".portGuestBookContainer");
-let cells = document.querySelectorAll(".cell");
-let cellCount = cells.length;
-let selectedIndex = 0;
-let cellHeight = container.offsetHeight;
-let rotateFn = "rotateX";
-let radius, theta;
 
-function rotateCarousel() {
-  let angle = theta * selectedIndex * -1;
-  container.style.transform =
-    "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
-}
-/* window.addEventListener("wheel", () => {
-  selectedIndex--;
-  rotateCarousel();
-}); */
-
-function changeCarousel() {
-  theta = 360 / cellCount;
-  radius = Math.round(cellHeight / 2 / Math.tan(Math.PI / cellCount));
-  for (let i = 0; i < cellCount; i++) {
-    let cell = cells[i];
-    if (i < cellCount) {
-      // visible cell
-      cell.style.opacity = 1;
-      let cellAngle = theta * i;
-      cell.style.transform =
-        rotateFn + "(" + cellAngle + "deg) translateZ(" + radius + "px)";
-    } else {
-      // hidden cell
-      cell.style.opacity = 0;
-      cell.style.transform = "none";
-    }
-  }
-  rotateCarousel();
-}
-changeCarousel();
 /*=============================Scroll Direction=============================*/
 document.onmousewheel = function (e) {
   directionProcess(mouseWheelDirection(e));
