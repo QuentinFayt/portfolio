@@ -240,25 +240,64 @@ main p {
   grid-area: guest;
   width: 100%;
   height: 100%;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .portGuestBookContainer {
   width: 100%;
   height: 100%;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  position: absolute;
+  transform: translateZ(-418px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 .cell {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+}
+.cell:nth-child(1) {
+  transform: rotateX(0deg) translateZ(418px);
+}
+.cell:nth-child(2) {
+  transform: rotateX(60deg) translateZ(418px);
+}
+.cell:nth-child(3) {
+  transform: rotateX(120deg) translateZ(418px);
+}
+.cell:nth-child(4) {
+  transform: rotateX(180deg) translateZ(418px);
+}
+.cell:nth-child(5) {
+  transform: rotateX(240deg) translateZ(418px);
+}
+.cell:nth-child(6) {
+  transform: rotateX(300deg) translateZ(418px);
 }
 .cell div {
   position: absolute;
+  width: 100%;
   top: 50%;
   transform: translateY(-50%);
+  left: 0;
+  right: 0;
   margin: 0 auto;
+  background-color: var(--T_background);
+  border: 1px solid var(--M_color);
+  padding: 1em;
 }
 .cell div h3,
 .cell div p {
   text-align: center;
+}
+.portGuestBookContainer .cell div h3 {
+  text-decoration: underline;
+  margin-bottom: 2vh;
 }
 .up,
 .down {

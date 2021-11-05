@@ -99,7 +99,38 @@ document.addEventListener("DOMContentLoaded", resizeBoxes);
 window.addEventListener("resize", resizeBoxes);
 
 /*=============================Wheel=============================*/
+let container = document.querySelector(".portGuestBookContainer");
+let cells = document.querySelectorAll(".cell");
+let cellCount = cells.length; //number of cells
+let selectedIndex = 0; //number of actual cell
+let cellHeight = container.offsetHeight; //cellHeight
+let rotateFn = "rotateX";
+let radius, theta;
 
+function rotateWheel() {
+  let angle = theta * selectedIndex * -1;
+  container.style.transform =
+    "translateZ(" + -radius + "px)" + rotateFn + "(" + angle + "deg)";
+}
+
+function changeCarousel() {
+  theta = 360 / cellCount;
+  radius = Math.round(cellHeight / 2 / Math.tan(Math.PI / cellCount));
+  for (let i = 0; i < cellCount; i++) {
+    let cell = cells[i];
+    if (i < cellCount) {
+      cell.style.opacity = 1;
+      let cellAngle = theta * i;
+      cell.style.transform =
+        rotateFn + "(" + cellAngle + "deg) translateZ(" + radius + "px)";
+    } else {
+      cell.style.opacity = 0;
+      cell.style.transform = "none";
+    }
+  }
+  rotateWheel();
+}
+changeCarousel();
 /*=============================Scroll Direction=============================*/
 document.onmousewheel = function (e) {
   directionProcess(mouseWheelDirection(e));
@@ -126,20 +157,20 @@ function directionProcess(direction) {
   switch (direction) {
     case "up":
       selectedIndex--;
-      rotateCarousel();
+      rotateWheel();
       break;
     case "down":
       selectedIndex++;
-      rotateCarousel();
+      rotateWheel();
       break;
   }
 }
 document.querySelector(".up").addEventListener("click", () => {
   selectedIndex--;
-  rotateCarousel();
+  rotateWheel();
 });
 document.querySelector(".down").addEventListener("click", () => {
   selectedIndex++;
-  rotateCarousel();
+  rotateWheel();
 });
 document.querySelector(".formDisplay").addEventListener("click", toggleForm);
