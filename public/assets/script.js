@@ -22,6 +22,14 @@ function toggleForm() {
       : "formGuestBook";
   button.style.display = "none";
 }
+document.querySelector(".formDisplay").addEventListener("click", toggleForm);
+/*===============================Count Guest Book Form Char===============================*/
+
+document.querySelector("#guestBookText").onkeyup = function (x) {
+  document.querySelector("#length").innerText = this.value.length + "/370";
+};
+
+/*================================Mail Play Video on POST================================*/
 
 function mailEdit() {
   let video = document.querySelector(".mailE");
@@ -30,13 +38,13 @@ function mailEdit() {
     video.play();
   }
 }
-/*Project switching view*/
+/*==============================Projects switching view==============================*/
 document.querySelectorAll(".project_inner").forEach((element) =>
   element.addEventListener("click", function () {
     this.classList.toggle("rotate");
   })
 );
-/*Tuto draggable*/
+/*==================================Tuto draggable==================================*/
 document.addEventListener("DOMContentLoaded", (event) => {
   let dragSrcEl = null;
 
@@ -154,6 +162,7 @@ function directionProcess(direction) {
       break;
   }
 }
+/*==========================On click Wheel event, up & down==========================*/
 document.querySelector(".up").addEventListener("click", () => {
   selectedIndex--;
   rotateWheel();
@@ -162,4 +171,14 @@ document.querySelector(".down").addEventListener("click", () => {
   selectedIndex++;
   rotateWheel();
 });
-document.querySelector(".formDisplay").addEventListener("click", toggleForm);
+/*========================On arrow key up & down Wheel event========================*/
+document.addEventListener("keydown", (event) => {
+  let key = event.key;
+  if (key === "ArrowDown") {
+    selectedIndex++;
+    rotateWheel();
+  } else if (key === "ArrowUp") {
+    selectedIndex--;
+    rotateWheel();
+  }
+});
