@@ -73,7 +73,7 @@
         <img src="./assets/img/arrowDown.png" class="down" draggable="false" />
     </article>
     <article class="articleGuestBook">
-        <p class="formDisplay">Vous voulez rajouter un message sur mon portfolio?</p>
+        <p class="formDisplay" onclick="toggleForm()">Vous voulez rajouter un message sur mon portfolio?</p>
         <form class="formGuestBook" method="POST" action="">
             <div>
                 <label for="guestBookName">Nom:</label>

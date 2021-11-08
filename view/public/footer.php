@@ -11,7 +11,8 @@
     </a>
     <p class="right mobile3 portfolioFont">Réalisé par Quentin Fayt | 2021</p>
 </footer>
-
+<script src='https://www.google.com/recaptcha/api.js' defer async></script>
+<script src="./assets/script.js" defer></script>
 </body>
 
 </html>

@@ -15,19 +15,18 @@ function toggle() {
 function toggleForm() {
   let button = document.querySelector(".formDisplay");
   let form = document.querySelector(".formGuestBook");
-
   form.className =
     form.className === "formGuestBook"
       ? "formGuestBook visible"
       : "formGuestBook";
   button.style.display = "none";
 }
-document.querySelector(".formDisplay").addEventListener("click", toggleForm);
 /*===============================Count Guest Book Form Char===============================*/
-
-document.querySelector("#guestBookText").onkeyup = function (x) {
-  document.querySelector("#length").innerText = this.value.length + "/370";
-};
+if (document.querySelector("#guestBookText")) {
+  document.querySelector("#guestBookText").onkeyup = function (x) {
+    document.querySelector("#length").innerText = this.value.length + "/370";
+  };
+}
 
 /*================================Mail Play Video on POST================================*/
 
@@ -39,11 +38,13 @@ function mailEdit() {
   }
 }
 /*==============================Projects switching view==============================*/
-document.querySelectorAll(".project_inner").forEach((element) =>
-  element.addEventListener("click", function () {
-    this.classList.toggle("rotate");
-  })
-);
+if (document.querySelector(".project_inner")) {
+  document.querySelectorAll(".project_inner").forEach((element) =>
+    element.addEventListener("click", function () {
+      this.classList.toggle("rotate");
+    })
+  );
+}
 /*==================================Tuto draggable==================================*/
 document.addEventListener("DOMContentLoaded", (event) => {
   let dragSrcEl = null;
@@ -96,89 +97,93 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 /*=============================Wheel=============================*/
-let container = document.querySelector(".portGuestBookContainer");
-let cells = document.querySelectorAll(".cell");
-let cellCount = cells.length; //number of cells
-let selectedIndex = 0; //number of actual cell
-let cellHeight = container.offsetHeight; //cellHeight
-let rotateFn = "rotateX";
-let radius, theta;
+if (document.querySelector(".portGuestBookContainer")) {
+  let container = document.querySelector(".portGuestBookContainer");
+  let cells = document.querySelectorAll(".cell");
+  let cellCount = cells.length; //number of cells
+  let selectedIndex = 0; //number of actual cell
+  let cellHeight = container.offsetHeight; //cellHeight
+  let rotateFn = "rotateX";
+  let radius, theta;
 
-function rotateWheel() {
-  let angle = theta * selectedIndex * -1;
-  container.style.transform =
-    "translateZ(" + -radius + "px)" + rotateFn + "(" + angle + "deg)";
-}
+  function rotateWheel() {
+    let angle = theta * selectedIndex * -1;
+    container.style.transform =
+      "translateZ(" + -radius + "px)" + rotateFn + "(" + angle + "deg)";
+  }
 
-function changeCarousel() {
-  theta = 360 / cellCount;
-  radius = Math.round(cellHeight / 2 / Math.tan(Math.PI / cellCount));
-  for (let i = 0; i < cellCount; i++) {
-    let cell = cells[i];
-    if (i < cellCount) {
-      cell.style.opacity = 1;
-      let cellAngle = theta * i;
-      cell.style.transform =
-        rotateFn + "(" + cellAngle + "deg) translateZ(" + radius + "px)";
-    } else {
-      cell.style.opacity = 0;
-      cell.style.transform = "none";
+  function changeCarousel() {
+    theta = 360 / cellCount;
+    radius = Math.round(cellHeight / 2 / Math.tan(Math.PI / cellCount));
+    for (let i = 0; i < cellCount; i++) {
+      let cell = cells[i];
+      if (i < cellCount) {
+        cell.style.opacity = 1;
+        let cellAngle = theta * i;
+        cell.style.transform =
+          rotateFn + "(" + cellAngle + "deg) translateZ(" + radius + "px)";
+      } else {
+        cell.style.opacity = 0;
+        cell.style.transform = "none";
+      }
+    }
+    rotateWheel();
+  }
+  changeCarousel();
+
+  /*=============================Scroll Direction=============================*/
+  document.onmousewheel = function (e) {
+    directionProcess(mouseWheelDirection(e));
+  };
+
+  function mouseWheelDirection(e) {
+    let delta = null,
+      direction = false;
+
+    if (!e) {
+      e = window.event;
+    }
+    if (e.wheelDelta) {
+      delta = e.wheelDelta / 60;
+    } else if (e.detail) {
+      delta = -e.detail / 2;
+    }
+    if (delta !== null) {
+      direction = delta > 0 ? "up" : "down";
+    }
+    return direction;
+  }
+  function directionProcess(direction) {
+    switch (direction) {
+      case "up":
+        selectedIndex--;
+        rotateWheel();
+        break;
+      case "down":
+        selectedIndex++;
+        rotateWheel();
+        break;
     }
   }
-  rotateWheel();
-}
-changeCarousel();
-/*=============================Scroll Direction=============================*/
-document.onmousewheel = function (e) {
-  directionProcess(mouseWheelDirection(e));
-};
-
-function mouseWheelDirection(e) {
-  let delta = null,
-    direction = false;
-
-  if (!e) {
-    e = window.event;
-  }
-  if (e.wheelDelta) {
-    delta = e.wheelDelta / 60;
-  } else if (e.detail) {
-    delta = -e.detail / 2;
-  }
-  if (delta !== null) {
-    direction = delta > 0 ? "up" : "down";
-  }
-  return direction;
-}
-function directionProcess(direction) {
-  switch (direction) {
-    case "up":
-      selectedIndex--;
-      rotateWheel();
-      break;
-    case "down":
-      selectedIndex++;
-      rotateWheel();
-      break;
-  }
-}
-/*==========================On click Wheel event, up & down==========================*/
-document.querySelector(".up").addEventListener("click", () => {
-  selectedIndex--;
-  rotateWheel();
-});
-document.querySelector(".down").addEventListener("click", () => {
-  selectedIndex++;
-  rotateWheel();
-});
-/*========================On arrow key up & down Wheel event========================*/
-document.addEventListener("keydown", (event) => {
-  let key = event.key;
-  if (key === "ArrowDown") {
-    selectedIndex++;
-    rotateWheel();
-  } else if (key === "ArrowUp") {
+  /*==========================On click Wheel event, up & down==========================*/
+  document.querySelector(".up").addEventListener("click", () => {
     selectedIndex--;
     rotateWheel();
-  }
-});
+  });
+  document.querySelector(".down").addEventListener("click", () => {
+    selectedIndex++;
+    rotateWheel();
+  });
+
+  /*========================On arrow key up & down Wheel event========================*/
+  document.addEventListener("keydown", (event) => {
+    let key = event.key;
+    if (key === "ArrowDown") {
+      selectedIndex++;
+      rotateWheel();
+    } else if (key === "ArrowUp") {
+      selectedIndex--;
+      rotateWheel();
+    }
+  });
+}

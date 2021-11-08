@@ -14,8 +14,6 @@
     ?>
     <link rel="icon" href="./assets/img/logo.ico" />
     <link href="./assets/style.css" rel="stylesheet" />
-    <script src='https://www.google.com/recaptcha/api.js' defer async></script>
-    <script src="./assets/script.js" defer></script>
     <title>
         PortFolio |
         <?php
