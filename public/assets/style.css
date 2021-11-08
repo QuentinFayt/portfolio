@@ -207,7 +207,7 @@ main p {
 }
 .presentation div {
   background-color: var(--T_background);
-  padding: 1vw;
+  padding: 2em;
   border: 1px solid var(--M_color);
 }
 .homepage section div h3,
