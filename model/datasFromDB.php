@@ -32,3 +32,9 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
         }
     }
 }
+if (isset($_POST["deleteId"])) {
+    $deleteSQL = "DELETE FROM portfolio_guestbook WHERE id='$_POST[deleteId]';";
+
+    mysqli_query($DB, $deleteSQL);
+    header("Location: ./?p=Edit&private=true");
+}
