@@ -23,7 +23,7 @@ function toggleForm() {
 }
 /*===============================Count Guest Book Form Char===============================*/
 if (document.querySelector("#guestBookText")) {
-  document.querySelector("#guestBookText").onkeyup = function (x) {
+  document.querySelector("#guestBookText").onkeyup = function () {
     document.querySelector("#length").innerText = this.value.length + "/370";
   };
 }
