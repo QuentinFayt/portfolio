@@ -34,7 +34,10 @@
                         <p><?= $message["textGuestB"] ?></p>
                     </div>
                     <div>
-                        <button>Delete</button>
+                        <form method="post">
+                            <input type="hidden" value="<?= $message["id"] ?>" name="deleteId" />
+                            <button type="submit">Delete</button>
+                        </form>
                     </div>
                 <?php
                 }

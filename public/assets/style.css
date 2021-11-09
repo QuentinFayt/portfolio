@@ -916,7 +916,12 @@ main p {
   margin-bottom: 2vh;
 }
 .tableHead div {
-  border: 3px solid var(--M_color);
+  border-top: 3px solid var(--M_color);
+  border-left: 3px solid var(--M_color);
+  border-bottom: 3px solid var(--M_color);
+}
+.tableHead div:last-child {
+  border-right: 3px solid var(--M_color);
 }
 .tableMessages div {
   border: 1px solid var(--M_color);
