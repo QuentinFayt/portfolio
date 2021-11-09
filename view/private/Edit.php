@@ -21,19 +21,22 @@
         <section class="tableMessages">
             <?php
             if (isset($messages)) {
-                $messages = array_reverse($messages);
                 foreach ($messages as $message) {
             ?>
                     <div>
                         <p><?= $message["id"] ?></p>
                     </div>
                     <div>
-                        <p><?= $message["userGuestB"] ?></p>
+                        <p class="editable"><?= $message["userGuestB"] ?></p>
                     </div>
                     <div>
-                        <p><?= $message["textGuestB"] ?></p>
+                        <p class="editable"><?= $message["textGuestB"] ?></p>
+                        <form method="post">
+                            <textarea class="test"><?= $message["textGuestB"] ?></textarea>
+                            <button type="submit">Update</button>
+                        </form>
                     </div>
-                    <div>
+                    <div class="delete">
                         <form method="post">
                             <input type="hidden" value="<?= $message["id"] ?>" name="deleteId" />
                             <button type="submit">Delete</button>
@@ -52,7 +55,7 @@
                 <div>
                     <p>No message yet!</p>
                 </div>
-                <div>
+                <div class="delete">
                     <button>Delete</button>
                 </div>
             <?php

@@ -7,7 +7,7 @@ if (!$DB) {
 
 mysqli_set_charset($DB, "utf8");
 
-$selectSQL = "SELECT * FROM `portfolio_guestbook`;";
+$selectSQL = "SELECT * FROM `portfolio_guestbook` ORDER BY id DESC;";
 
 $selectionQuery = mysqli_query($DB, $selectSQL) or die(mysqli_error($DB));
 
