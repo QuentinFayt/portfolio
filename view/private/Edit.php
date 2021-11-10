@@ -17,16 +17,19 @@
             <div>
 
             </div>
+            <div>
+
+            </div>
         </section>
         <section class="tableMessages">
             <?php
             if (isset($messagesAdmin)) {
                 foreach ($messagesAdmin as $messageAdmin) {
             ?>
-                    <div>
+                    <div class="userMessage">
                         <p><?= $messageAdmin["id"] ?></p>
                     </div>
-                    <div>
+                    <div class="userMessage">
                         <p><?= $messageAdmin["userGuestB"] ?></p>
                     </div>
                     <div>
@@ -38,12 +41,33 @@
                             <a href="?p=Edit&private=true" class="buttonEdit">Cancel</a>
                         </form>
                     </div>
-                    <div class="delete">
+                    <div class="divButton">
                         <form method="post">
                             <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="deleteId" />
                             <button type="submit" class="buttonEdit">Delete</button>
                         </form>
                     </div>
+                    <?php
+                    if (!$messageAdmin["validation"]) {
+                    ?>
+                        <div class="divButton">
+                            <form method="post">
+                                <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="validate" />
+                                <button type="submit" class="buttonEdit validate">Validate</button>
+                            </form>
+                        </div>
+                    <?php
+                    } else {
+                    ?>
+                        <div class="divButton">
+                            <form method="post">
+                                <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="Unvalidate" />
+                                <button type="submit" class="buttonEdit cancel">Annuler</button>
+                            </form>
+                        </div>
+                    <?php
+                    }
+                    ?>
                 <?php
                 }
             } else {

@@ -33,9 +33,9 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
                 $insertSQL = "INSERT INTO `portfolio_guestbook`(`userGuestB`, `textGuestB`) VALUES ('$insertPseudo','$insertMSG');";
                 mysqli_query($DB, $insertSQL);
                 mail(MAIL, "Nouveau message d'un utilisateur sur le portfolio!", "Tu as reçu un nouveau message pour la page d'accueil! Va voir ta base de donnée!", 'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
-                'From: '. "Portfolio" ."\r\n" .
-                'Reply-To: ' . "none" . "\r\n" .
-                'X-Mailer: PHP/' . phpversion());
+                    'From: ' . "Portfolio" . "\r\n" .
+                    'Reply-To: ' . "none" . "\r\n" .
+                    'X-Mailer: PHP/' . phpversion());
                 header("Location: ./");
             }
         }
@@ -55,5 +55,19 @@ if (isset($_POST["updateTextId"])) {
         $updateSQL = "UPDATE portfolio_guestbook SET textGuestB = '$updatedtext' WHERE id=$textId;";
         mysqli_query($DB, $updateSQL);
     }
+    header("Location: ./?p=Edit&private=true");
+}
+if (isset($_POST["validate"])) {
+    $textId = (int) $_POST["validate"];
+    $updateSQL = "UPDATE portfolio_guestbook SET `validation` = 1 WHERE id=$textId;";
+    mysqli_query($DB, $updateSQL);
+
+    header("Location: ./?p=Edit&private=true");
+}
+if (isset($_POST["Unvalidate"])) {
+    $textId = (int) $_POST["Unvalidate"];
+    $updateSQL = "UPDATE portfolio_guestbook SET `validation` = 0 WHERE id=$textId;";
+    mysqli_query($DB, $updateSQL);
+
     header("Location: ./?p=Edit&private=true");
 }
