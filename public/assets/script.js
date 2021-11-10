@@ -191,6 +191,7 @@ if (document.querySelector(".portGuestBookContainer")) {
 if (document.querySelector(".updateArea")) {
   let messages = document.querySelectorAll(".editable");
   let updateArea = document.querySelectorAll(".updateArea");
+  let deleteButton = document.querySelectorAll(".deleteButton");
 
   messages.forEach((element) =>
     element.addEventListener("click", function () {
@@ -202,7 +203,12 @@ if (document.querySelector(".updateArea")) {
         "px";
     })
   );
-
+  deleteButton.forEach((element) =>
+    element.addEventListener("click", function () {
+      this.style = "display:none;";
+      this.nextElementSibling.style = "display:block;";
+    })
+  );
   updateArea.forEach((element) =>
     element.addEventListener("keyup", function () {
       this.style = "height:" + (this.scrollHeight + 2) + "px";

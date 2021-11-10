@@ -42,9 +42,12 @@
                         </form>
                     </div>
                     <div class="divButton">
-                        <form method="post">
+                        <button class="buttonEdit deleteButton">Delete</button>
+                        <form method="post" class="confirmForm">
+                            <p>Are you sure?</p>
                             <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="deleteId" />
-                            <button type="submit" class="buttonEdit">Delete</button>
+                            <button type="submit" class="buttonEdit confirm">Yes</button>
+                            <a href="?p=Edit&private=true" class="buttonEdit confirm">No</a>
                         </form>
                     </div>
                     <?php
