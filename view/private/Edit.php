@@ -20,27 +20,27 @@
         </section>
         <section class="tableMessages">
             <?php
-            if (isset($messages)) {
-                foreach ($messages as $message) {
+            if (isset($messagesAdmin)) {
+                foreach ($messagesAdmin as $messageAdmin) {
             ?>
                     <div>
-                        <p><?= $message["id"] ?></p>
+                        <p><?= $messageAdmin["id"] ?></p>
                     </div>
                     <div>
-                        <p><?= $message["userGuestB"] ?></p>
+                        <p><?= $messageAdmin["userGuestB"] ?></p>
                     </div>
                     <div>
-                        <p class="editable"><?= $message["textGuestB"] ?></p>
+                        <p class="editable"><?= $messageAdmin["textGuestB"] ?></p>
                         <form method="post">
-                            <textarea class="updateArea" name="updateText"><?= $message["textGuestB"] ?></textarea>
-                            <input type="hidden" value="<?= $message["id"] ?>" name="updateTextId" />
+                            <textarea class="updateArea" name="updateText"><?= $messageAdmin["textGuestB"] ?></textarea>
+                            <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="updateTextId" />
                             <button type="submit" class="buttonEdit">Update</button>
                             <a href="?p=Edit&private=true" class="buttonEdit">Cancel</a>
                         </form>
                     </div>
                     <div class="delete">
                         <form method="post">
-                            <input type="hidden" value="<?= $message["id"] ?>" name="deleteId" />
+                            <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="deleteId" />
                             <button type="submit" class="buttonEdit">Delete</button>
                         </form>
                     </div>
