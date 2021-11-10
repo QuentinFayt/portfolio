@@ -946,8 +946,19 @@ main p {
   align-items: center;
   justify-content: center;
 }
-.tableMessages div button {
-  color: black;
+.buttonEdit {
+  border: 1px solid var(--M_color);
+  background-color: var(--T_background);
+  color: white;
+  text-decoration: none;
+  border-radius: 10%;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.25em;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.53);
+}
+.buttonEdit:hover {
+  box-shadow: none;
 }
 /*============================801px To 1280px============================*/
 @media screen and (min-width: 801px) and (max-width: 1280px) {
