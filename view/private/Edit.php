@@ -15,7 +15,7 @@
                 <p>Message</p>
             </div>
             <div>
-
+                <p>Validation</p>
             </div>
             <div>
 
@@ -41,15 +41,6 @@
                             <a href="?p=Edit&private=true" class="buttonEdit">Cancel</a>
                         </form>
                     </div>
-                    <div class="divButton">
-                        <button class="buttonEdit deleteButton">Delete</button>
-                        <form method="post" class="confirmForm">
-                            <p>Are you sure?</p>
-                            <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="deleteId" />
-                            <button type="submit" class="buttonEdit confirm">Yes</button>
-                            <a href="?p=Edit&private=true" class="buttonEdit confirm">No</a>
-                        </form>
-                    </div>
                     <?php
                     if (!$messageAdmin["validation"]) {
                     ?>
@@ -71,6 +62,15 @@
                     <?php
                     }
                     ?>
+                    <div class="divButton">
+                        <button class="buttonEdit deleteButton">Delete</button>
+                        <form method="post" class="confirmForm">
+                            <p>Are you sure?</p>
+                            <input type="hidden" value="<?= $messageAdmin["id"] ?>" name="deleteId" />
+                            <button type="submit" class="buttonEdit confirm">Yes</button>
+                            <a href="?p=Edit&private=true" class="buttonEdit confirm">No</a>
+                        </form>
+                    </div>
                 <?php
                 }
             } else {
@@ -84,8 +84,11 @@
                 <div>
                     <p>No message yet!</p>
                 </div>
-                <div class="delete">
+                <div class="divButton">
                     <button>Delete</button>
+                </div>
+                <div class="divButton">
+                    <p>No messages to validate yet!</p>
                 </div>
             <?php
             }
