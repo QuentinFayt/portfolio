@@ -27,12 +27,13 @@
                         <p><?= $message["id"] ?></p>
                     </div>
                     <div>
-                        <p class="editable"><?= $message["userGuestB"] ?></p>
+                        <p><?= $message["userGuestB"] ?></p>
                     </div>
                     <div>
                         <p class="editable"><?= $message["textGuestB"] ?></p>
                         <form method="post">
-                            <textarea class="test"><?= $message["textGuestB"] ?></textarea>
+                            <textarea class="updateArea" name="updateText"><?= $message["textGuestB"] ?></textarea>
+                            <input type="hidden" value="<?= $message["id"] ?>" name="updateTextId" />
                             <button type="submit">Update</button>
                         </form>
                     </div>

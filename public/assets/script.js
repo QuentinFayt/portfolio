@@ -187,3 +187,19 @@ if (document.querySelector(".portGuestBookContainer")) {
     }
   });
 }
+/*========================Admin update========================*/
+if (document.querySelector(".updateArea")) {
+  let messages = document.querySelectorAll(".editable");
+  let updateArea = document.querySelectorAll(".updateArea");
+
+  messages.forEach((element) =>
+    element.addEventListener("click", function () {
+      this.style = "display:none;";
+      this.nextElementSibling.style = "display:block";
+      this.nextElementSibling.firstElementChild.style =
+        "height:" +
+        (this.nextElementSibling.firstElementChild.scrollHeight + 10) +
+        "px";
+    })
+  );
+}

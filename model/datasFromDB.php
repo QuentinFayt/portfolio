@@ -38,3 +38,12 @@ if (isset($_POST["deleteId"])) {
     mysqli_query($DB, $deleteSQL);
     header("Location: ./?p=Edit&private=true");
 }
+if (isset($_POST["updateTextId"])) {
+    $textId = $_POST["updateTextId"];
+    $updatedtext = htmlspecialchars(strip_tags(trim($_POST["updateText"])), ENT_QUOTES);
+    if (!empty($updatedtext)) {
+        $updateSQL = "UPDATE portfolio_guestbook SET textGuestB = '$updatedtext' WHERE id=$textId;";
+        mysqli_query($DB, $updateSQL);
+    }
+    header("Location: ./?p=Edit&private=true");
+}

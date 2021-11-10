@@ -936,6 +936,10 @@ main p {
   resize: none;
   width: 100%;
   overflow: hidden;
+  padding-top: 10px;
+}
+.editable + form {
+  display: none;
 }
 .delete {
   display: flex;
