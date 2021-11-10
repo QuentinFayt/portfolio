@@ -202,4 +202,10 @@ if (document.querySelector(".updateArea")) {
         "px";
     })
   );
+
+  updateArea.forEach((element) =>
+    element.addEventListener("keyup", function () {
+      this.style = "height:" + (this.scrollHeight + 2) + "px";
+    })
+  );
 }

@@ -34,13 +34,14 @@
                         <form method="post">
                             <textarea class="updateArea" name="updateText"><?= $message["textGuestB"] ?></textarea>
                             <input type="hidden" value="<?= $message["id"] ?>" name="updateTextId" />
-                            <button type="submit">Update</button>
+                            <button type="submit" class="buttonEdit">Update</button>
+                            <a href="?p=Edit&private=true" class="buttonEdit">Cancel</a>
                         </form>
                     </div>
                     <div class="delete">
                         <form method="post">
                             <input type="hidden" value="<?= $message["id"] ?>" name="deleteId" />
-                            <button type="submit">Delete</button>
+                            <button type="submit" class="buttonEdit">Delete</button>
                         </form>
                     </div>
                 <?php
