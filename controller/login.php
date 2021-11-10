@@ -4,8 +4,8 @@
 
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    $username = htmlspecialchars(strip_tags(trim($_POST["username"])),ENT_QUOTES);
+    $password = htmlspecialchars(strip_tags(trim($_POST["password"])),ENT_QUOTES);
 
     if (
         mysqli_fetch_row(mysqli_query($DB, "SELECT `username` FROM `portfolio_admin` WHERE `username` = '$username'"))[0] &&
