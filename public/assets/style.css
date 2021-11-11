@@ -169,7 +169,6 @@ footer p {
 /*===============Commun===============*/
 main {
   grid-area: main;
-  margin: 2em;
   margin-bottom: 1em;
 }
 main h1 {
@@ -1264,7 +1263,8 @@ main p {
   .mainTuto h1,
   .mainGalerie h1,
   .mainCV h1,
-  .title h1 {
+  .title h1,
+  .edit h1 {
     height: unset;
     line-height: unset;
     flex-basis: unset;
@@ -1474,7 +1474,21 @@ main p {
   }
   /*===============Admin===============*/
   .management {
-    width: 100%;
+    width: 100vw;
+  }
+  .tableHead {
+    width: auto;
+  }
+  .tableMessages {
+    width: auto;
+  }
+  .management section div {
+    padding: 0;
+  }
+  .management section div p,
+  .management section div button,
+  .management section div a {
+    font-size: 2vw;
   }
   @media screen and (max-width: 400px) {
     .mainHomepage img {
@@ -1504,6 +1518,11 @@ main p {
     .portGuestbook {
       max-width: 50ch;
       font-size: 4vw;
+    }
+    .management section div p,
+    .management section div button,
+    .management section div a {
+      font-size: 3vw;
     }
     @media screen and (max-width: 350px) {
       .presentation p {

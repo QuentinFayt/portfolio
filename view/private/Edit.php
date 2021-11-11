@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<main>
+<main class="edit">
     <h1 class="portfolioFont mainColor">Edit</h1>
     <article class="management">
         <section class="tableHead">
