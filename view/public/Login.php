@@ -1,6 +1,6 @@
 <?php
 ?>
-<main>
+<main class="loginM">
     <h1 class="loginT portfolioFont mainColor">Log in</h1>
     <article>
         <form method="POST" action="" class="login">
