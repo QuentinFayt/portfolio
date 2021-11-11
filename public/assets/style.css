@@ -1472,6 +1472,10 @@ main p {
   .wrong p {
     font-size: 2vw;
   }
+  /*===============Admin===============*/
+  .management {
+    width: 100%;
+  }
   @media screen and (max-width: 400px) {
     .mainHomepage img {
       background-position-y: -3vh;
