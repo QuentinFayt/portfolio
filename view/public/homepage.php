@@ -16,7 +16,7 @@
             <div class="check">
                 <h3>La <span class="mainColor">curiosité</span> est-elle vraiment un vilain défaut?</h3>
                 <p>
-                    Après le développement de plusieurs projets, je me suis souvent poser des questions sur telle ou telle concept/technologie. Au point de souvent être considéré comme trop <span class="mainColor">curieux<span>.
+                    Après le développement de plusieurs projets, je me suis souvent posé des questions sur tel ou tel concept/technologie. Au point de souvent être considéré comme trop <span class="mainColor">curieux<span>.
                 </p>
                 <p>
                     Mais je pense que c'est justement ma <span class="mainColor">curiosité</span>, ainsi que ma <span class="mainColor">ténacité</span> à vouloir résoudre un problème, qui m'ont permis de toujours aller plus loin et à souvent transgresser les consignes qui m'avaient été données.
