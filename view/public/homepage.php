@@ -9,7 +9,7 @@
         </div>
         <h1><span class="mainColor portfolioFont">Portfolio</span> | <span class="darkerMainColor">Accueil</span></h1>
     </div>
-    <img src="./assets/img/triangle.png" class="profilePicM" draggable="false" />
+    <img src="./assets/img/pic.png" class="profilePicM" draggable="false" />
     <article class="homepage">
         <img src="./assets/img/arrowUp.png" class="up" draggable="false" />
         <section class="presentation">
@@ -36,7 +36,7 @@
                 </p>
             </div>
         </section>
-        <img src="./assets/img/triangle.png" class="profilePic" draggable="false" />
+        <img src="./assets/img/pic.png" class="profilePic" draggable="false" />
         <section class="portGuestbook">
             <div class="portGuestBookContainer">
                 <?php

@@ -16,7 +16,7 @@ $selectionAdminQuery = mysqli_query($DB, $selectAdminSQL) or die(mysqli_error($D
 if (!empty(mysqli_num_rows($selectionQuery))) {
     $messages = mysqli_fetch_all($selectionQuery, MYSQLI_ASSOC);
 }
-if (!empty(mysqli_num_rows($selectionQuery))) {
+if (!empty(mysqli_num_rows($selectionAdminQuery))) {
     $messagesAdmin = mysqli_fetch_all($selectionAdminQuery, MYSQLI_ASSOC);
 }
 if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
