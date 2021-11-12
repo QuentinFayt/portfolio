@@ -8,8 +8,10 @@ define("PORT", 1234);
 
 define("MAIL", "test@testmail.test");
 
-define("CAPTCHA_SERVER", "XXXXXXXXXXXXXXXXXXXXXXX");
-define("CAPTCHA_USER", "XXXXXXXXXXXXXXXXXXXXXXXXX");
+define("CAPTCHA_SERVER_HOMEPAGE", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+define("CAPTCHA_USER_HOMEPAGE", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+define("CAPTCHA_SERVER_CONTACT", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+define("CAPTCHA_USER_CONTACT", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 
 if (isset($_SESSION["idSession"]) && $_SESSION["idSession"] == session_id()) {
     define("WHITE_LIST", ["homepage", "Accueil", "CV", "Galerie", "Tutoriels", "Liens"]);

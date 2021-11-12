@@ -20,7 +20,7 @@ if (!empty(mysqli_num_rows($selectionAdminQuery))) {
     $messagesAdmin = mysqli_fetch_all($selectionAdminQuery, MYSQLI_ASSOC);
 }
 if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
-    $googleUrlCatpcha = 'https://www.google.com/recaptcha/api/siteverify?secret=' . CAPTCHA_SERVER . '&response=' . $_POST['g-recaptcha-response'];
+    $googleUrlCatpcha = 'https://www.google.com/recaptcha/api/siteverify?secret=' . CAPTCHA_SERVER_HOMEPAGE . '&response=' . $_POST['g-recaptcha-response'];
     $verifyRecaptcha = curlRequest($googleUrlCatpcha);
     $decodeGoogleAnswer = json_decode($verifyRecaptcha, true);
     if ($decodeGoogleAnswer["success"]) {

@@ -3,7 +3,7 @@
 <main>
     <label for="message">
         <?php
-        if (!$_POST) {
+        if (empty($_POST)) {
         ?>
             <video muted class="mailE">
                 <source src="./assets/img/mail_1.mp4" type="video/mp4">
@@ -40,7 +40,7 @@
                 <label for="message">Votre message:</label>
                 <textarea id="message" type="textarea" name="user_message" placeholder="Enter your message" oninput="mailEdit()" required></textarea>
             </div>
-            <div class="g-recaptcha" data-sitekey="<?= CAPTCHA_USER ?>"></div>
+            <div class="g-recaptcha" data-sitekey="<?= CAPTCHA_USER_CONTACT ?>"></div>
             <div class="buttonContact">
                 <input type="submit" value="Envoyer" />
             </div>

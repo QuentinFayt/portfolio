@@ -89,7 +89,7 @@
                 <label for="guestBookText">Votre message <span id="length">0/370<span>:</label>
                 <textarea id="guestBookText" type="textarea" maxlength="370" name="userGuestBookText" placeholder="Votre message (max 370 caractères)" required></textarea>
             </div>
-            <div class="g-recaptcha" data-sitekey="<?= CAPTCHA_USER ?>"></div>
+            <div class="g-recaptcha" data-sitekey="<?= CAPTCHA_USER_HOMEPAGE ?>"></div>
             <div class="buttonGuestBook">
                 <input type="submit" value="Envoyer" class="buttonGuestBook"></input>
             </div>
