@@ -172,6 +172,7 @@ footer p {
 main {
   grid-area: main;
   padding: 1em;
+  min-height: 90vh;
 }
 main h1 {
   font-size: 3vw;
@@ -861,9 +862,6 @@ main p {
   width: 100%;
 }
 /*===============Login===============*/
-.loginM {
-  height: 89.5vh;
-}
 .login {
   padding: 1vw;
   background-color: var(--T_background);
