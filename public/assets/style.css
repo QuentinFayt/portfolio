@@ -879,7 +879,8 @@ main p {
 .buttonLogin input {
   background-color: var(--M_color);
 }
-.wrong {
+.wrong,
+.contactForm .wrong {
   display: block;
   width: 100%;
   text-align: center;

@@ -30,6 +30,8 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
 
                 mail($toDev, $subjectDev, $messageDev, $headersToDev);
                 mail($toUsers, $subjectUsers, $messageUsers, $headersToUsers);
+            } else {
+                $mailError = true;
             }
         }
     }

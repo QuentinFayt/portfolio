@@ -3,7 +3,7 @@
 <main>
     <label for="message">
         <?php
-        if (empty($_POST)) {
+        if (empty($_POST) || isset($mailError)) {
         ?>
             <video muted class="mailE">
                 <source src="./assets/img/mail_1.mp4" type="video/mp4">
@@ -28,6 +28,16 @@
     <img class="contactImg" src="./assets/img/mail.png" alt="mail" />
     <article>
         <form method="POST" action="" class="contactForm">
+            <?php
+            if (isset($mailError)) {
+            ?>
+                <div class="wrong" id="wrong">
+                    <div onclick="document.getElementById('wrong').style.display='none';" id="cross"></div>
+                    <p>Your mail was not successfully delivered! </br>Please retry!</p>
+                </div>
+            <?php
+            }
+            ?>
             <div>
                 <label for="name">Nom:</label>
                 <input id="name" type="text" name="user_name" placeholder="Enter your name" required />
