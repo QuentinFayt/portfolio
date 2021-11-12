@@ -54,6 +54,10 @@ nav {
   display: grid;
   grid-template-columns: 12.5% 67.5% 20%;
   border-bottom: 1px solid var(--M_color);
+  background-color: var(--B_background);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 nav div svg {
   display: none;
@@ -1131,6 +1135,7 @@ main p {
     border: 3px solid white;
     z-index: 1;
     transition: left 500ms ease 200ms;
+    top: unset;
   }
   .in {
     left: 0;
@@ -1206,6 +1211,7 @@ main p {
   .burger {
     display: block;
     transition: all 0.3s 0s ease;
+    z-index: 2;
   }
   .burger:active {
     transform: scale(1.5);
@@ -1278,7 +1284,9 @@ main p {
   .g-recaptcha {
     transform: scale(0.9);
   }
-
+  main {
+    padding: 0;
+  }
   /*===============homepage===============*/
   .homepage {
     grid-template-columns: 1fr;
