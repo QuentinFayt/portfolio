@@ -54,16 +54,22 @@
                 } else {
                     ?>
                     <div class="cell">
-                        <h3>Message de :</h3>
-                        <p>No message yet</p>
+                        <div>
+                            <h3>Message de :</h3>
+                            <p>No message yet</p>
+                        </div>
                     </div>
                     <div class="cell">
-                        <h3>Message de :</h3>
-                        <p>No message yet</p>
+                        <div>
+                            <h3>Message de :</h3>
+                            <p>No message yet</p>
+                        </div>
                     </div>
                     <div class="cell">
-                        <h3>Message de :</h3>
-                        <p>No message yet</p>
+                        <div>
+                            <h3>Message de :</h3>
+                            <p>No message yet</p>
+                        </div>
                     </div>
                 <?php
                 }
