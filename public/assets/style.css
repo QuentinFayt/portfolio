@@ -1132,7 +1132,7 @@ main p {
     left: -31vw;
     background-color: var(--T_background);
     border: 3px solid white;
-    z-index: 1;
+    z-index: 2;
     transition: left 500ms ease 200ms;
     top: unset;
   }
