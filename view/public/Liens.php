@@ -138,14 +138,14 @@
             <ul>
                 <a href="https://www.google.be" target="_blank" draggable="false">
                     <li>
-                        <div>
-                            <img draggable="false" src="./assets/img/google.png" />
-                        </div>
                         <p>
                             Google : <br /><br />
                             Il est souvent dit de manière péjorative, quand quelqu'un n'a pas fait l'effort de se renseigner au préalable, que Google est ton ami.</br>
                             Mais dans le monde du développement, Google est vraiment ton ami! Savoir établir un besoin et surtout, savoir ce qu'on cherche, est extrêmement important.
                         </p>
+                        <div>
+                            <img draggable="false" src="./assets/img/google.png" />
+                        </div>
                     </li>
                 </a>
             </ul>
