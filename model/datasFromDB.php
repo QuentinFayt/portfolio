@@ -32,9 +32,10 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
             if (!empty($insertPseudo) && !empty($insertMSG) && strlen($insertPseudo) < 50 && strlen($insertMSG) < 370) {
                 $insertSQL = "INSERT INTO `portfolio_guestbook`(`userGuestB`, `textGuestB`) VALUES ('$insertPseudo','$insertMSG');";
                 mysqli_query($DB, $insertSQL);
+
                 mail(MAIL, "Nouveau message d'un utilisateur sur le portfolio!", "Tu as reçu un nouveau message pour la page d'accueil! Va voir ta base de donnée!", 'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
-                    'From: ' . "Portfolio" . "\r\n" .
-                    'Reply-To: ' . "none" . "\r\n" .
+                    'From: ' . MAIL . "\r\n" .
+                    'Reply-To: ' . MAIL . "\r\n" .
                     'X-Mailer: PHP/' . phpversion());
                 header("Location: ./");
             }
