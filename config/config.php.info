@@ -7,6 +7,7 @@ define("NAME", "myDB");
 define("PORT", 1234);
 
 define("MAIL", "test@testmail.test");
+define("MDP", "mot-de-passe");
 
 define("CAPTCHA_SERVER_HOMEPAGE", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 define("CAPTCHA_USER_HOMEPAGE", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");

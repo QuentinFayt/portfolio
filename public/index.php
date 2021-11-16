@@ -3,6 +3,10 @@ session_start();
 
 require_once "../config/config.php";
 
+require '../model/PHPMailer/src/Exception.php';
+require '../model/PHPMailer/src/PHPMailer.php';
+require '../model/PHPMailer/src/SMTP.php';
+
 include "../controller/helper.php";
 
 require_once "../model/datasFromDB.php";
