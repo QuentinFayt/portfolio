@@ -8,6 +8,7 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
     $verifyRecaptcha = curlRequest($googleUrlCatpcha);
     $decodeGoogleAnswer = json_decode($verifyRecaptcha, true);
     if ($decodeGoogleAnswer["success"]) {
+
         if (isset($_POST["user_name"]) && isset($_POST["user_mail"]) && isset($_POST["user_message"])) {
             $pseudo =  strip_tags(trim($_POST["user_name"]));
             $userMail = filter_var(strip_tags(trim($_POST["user_mail"])), FILTER_VALIDATE_EMAIL);
@@ -23,8 +24,8 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
                 $mail->Username = MAIL;
                 $mail->Password = MDP;
 
-                $mail->setFrom(MAIL, 'Quentin');
-                $mail->addAddress($userMail, $pseudo);
+                $mail->setFrom($userMail, $pseudo);
+                $mail->addAddress(MAIL, "Quentin");
                 $mail->CharSet = 'UTF-8';
                 $mail->Subject  = "Message de $pseudo";
                 $mail->Body     = $message;
@@ -47,8 +48,8 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
                 $mail->Username = MAIL;
                 $mail->Password = MDP;
 
-                $mail->setFrom($userMail, $pseudo);
-                $mail->addAddress(MAIL, "Quentin");
+                $mail->setFrom(MAIL, 'Quentin');
+                $mail->addAddress($userMail, $pseudo);
                 $mail->CharSet = 'UTF-8';
 
                 $mail->Subject  = "Accusé de réception | Portfolio Quentin Fayt";
