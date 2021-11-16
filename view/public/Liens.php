@@ -12,10 +12,10 @@
                             <img draggable="false" src="./assets/img/mozilla_dev.png" />
                         </div>
                         <p>
-                            Mozila developper : <br /><br />
+                            Mozilla developper : <br /><br />
                             J'utilise ce site pour vérifier énormément de choses, des fonctions en javascript,
                             des propriétés css. C'est une véritable bible très utile pour aider à comprendre
-                            comment fonctionne un nouvel élément ou vérifier ce dont on est pas sûr.
+                            comment fonctionne un nouvel élément ou vérifier ce dont on n'est pas sûr.
 
                         </p>
                     </li>
@@ -107,7 +107,7 @@
                     <li>
                         <p>
                             Code Wars : <br /> <br />
-                            Testez c'est bien, mais s'exercer c'est mieux! Code Wars est un site qui propose des exercices dans énormément de langages et ce sur plusieurs exercices, divers et variés.
+                            Tester c'est bien, mais s'exercer c'est mieux! Code Wars est un site qui propose des exercices dans énormément de langages et ce sur plusieurs exercices, divers et variés.
                             Vous y commencez Kyu 7 et le plus haut niveau est le Dan 2 (Kyu 7,6,5,4,3,2,1 puis Dan 1,2). Le but étant de résoudre des petits exercices à l'apparence simple sous forme de Kata (de même niveau que les rangs). Ces exercices sont bien et aident grandement à progresser.
                         </p>
                         <div>
@@ -118,33 +118,33 @@
             </ul>
         </section>
         <section>
-            <h2>Github? Github!</h2>
+            <h2>Google est ton ami</h2>
             <ul>
-                <a href="https://github.com/" target="_blank" draggable="false">
+                <a href="https://www.google.be" target="_blank" draggable="false">
                     <li>
                         <div>
-                            <img draggable="false" src="./assets/img/git.png" />
+                            <img draggable="false" src="./assets/img/google.png" />
                         </div>
                         <p>
-                            Github : <br /><br />
-                            Je ne peux pas finir sans parler de Github, qui est devenu mon meilleur ami depuis la formation. Upload des fichiers, vérifier des versions, garder un projet à jour à travers plusieurs parcs informatiques. C'est juste un outil extrêmement puissant.
+                            Google : <br /><br />
+                            Il est souvent dit de manière péjorative, quand quelqu'un n'a pas fait l'effort de se renseigner au préalable, que Google est ton ami.</br>
+                            Mais dans le monde du développement, Google est vraiment ton ami! Savoir établir un besoin et surtout, savoir ce qu'on cherche, est extrêmement important.
                         </p>
                     </li>
                 </a>
             </ul>
         </section>
         <section>
-            <h2>Google est ton ami</h2>
+            <h2>Github? Github!</h2>
             <ul>
-                <a href="https://www.google.be" target="_blank" draggable="false">
+                <a href="https://github.com/" target="_blank" draggable="false">
                     <li>
                         <p>
-                            Google : <br /><br />
-                            Il est souvent dit de manière péjorative, quand quelqu'un n'a pas fait l'effort de se renseigner au préalable, que Google est ton ami.</br>
-                            Mais dans le monde du développement, Google est vraiment ton ami! Savoir établir un besoin et surtout, savoir ce qu'on cherche, est extrêmement important.
+                            Github : <br /><br />
+                            Je ne peux pas finir sans parler de Github, qui est devenu mon meilleur ami depuis la formation. Upload des fichiers, vérifier des versions, garder un projet à jour à travers plusieurs parcs informatiques. C'est juste un outil extrêmement puissant.
                         </p>
                         <div>
-                            <img draggable="false" src="./assets/img/google.png" />
+                            <img draggable="false" src="./assets/img/git.png" />
                         </div>
                     </li>
                 </a>

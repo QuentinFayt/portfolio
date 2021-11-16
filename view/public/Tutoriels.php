@@ -20,12 +20,12 @@
             </p>
 
             <p>
-                Il permet via diverse étapes, images, tests, de comprendre à quoi sert telle ou telle partie du code. Les exemples sont clairs et bien fait.
+                Il permet via diverse étapes, images, tests, de comprendre à quoi sert telle ou telle partie du code. Les exemples sont clairs et bien fais.
             </p>
         </div>
         <div class="conclu">
             <h2>Conclusion</h2>
-            <p>Je conseil plutôt le tutoriel de web.dev. Il est plus clair, prend plus son temps et permet de bien comprendre quels sont les éléments indispensable à l'utilisation du drag & drop. Et surtout... Il montre un cas concret de l'utilisation de cette features. Car je pense que bouger une image pour la mettre dans une boite, ça n'est pas très intéressant comme utilisation comparé à la création d'un menu modulaire pour un utilisateur.</p>
+            <p>Je conseille plutôt le tutoriel de web.dev. Il est plus clair, prend plus son temps et permet de bien comprendre quels sont les éléments indispensables à l'utilisation du drag & drop. Et surtout... Il montre un cas concret de l'utilisation de cette feature. Car je pense que bouger une image pour la mettre dans une boite, ça n'est pas très intéressant comme utilisation comparé à la création d'un menu modulaire pour un utilisateur.</p>
             <p>L'aviez-vous remarqué? Vous pouvez drag & drop la "boîte" w3schools et web.dev l'une sur l'autre pour les changer de place!</p>
         </div>
     </section>

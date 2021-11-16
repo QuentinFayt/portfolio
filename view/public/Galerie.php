@@ -12,7 +12,7 @@
                     <h3>Projet de préformation</h3>
                     <div class="text">
                         <p>Site réalisé pour la préformation au CF2M</p>
-                        <p>Le but de l'exercice était de réaliser un site à charte libre, avec du contenu imposés par pages, afin de prouver notre motivation pour suivre la formation qualifiante.</p>
+                        <p>Le but de l'exercice était de réaliser un site à charte libre, avec du contenu imposé par pages, afin de prouver notre motivation pour suivre la formation qualifiante.</p>
                     </div>
                     <a href="https://quentin.webdev-cf2m.be/projets/prefo/index.html" target="_blank">https://quentin.webdev-cf2m.be/projets/prefo/index.html</a>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="text">
                         <p>Site réalisé lors de ma formation au CF2M</p>
                         <p>Le but de l'exercice était de refaire le site sur Bruxelles avec une charte graphique imposée avec une limite de temps de 6 heures pour le réaliser.</p>
-                        <p>Suite à ça, nous avons du le rendre responsive avec plusieurs configurations imposées</p>
+                        <p>Suite à ça, nous avons dû le rendre responsive avec plusieurs configurations imposées</p>
                     </div>
                     <a href="https://quentin.webdev-cf2m.be/projets/london/public/index.php" target="_blank">https://quentin.webdev-cf2m.be/projets/london/</a>
                 </div>
