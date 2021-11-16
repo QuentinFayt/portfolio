@@ -1,4 +1,8 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
     $googleUrlCatpcha = 'https://www.google.com/recaptcha/api/siteverify?secret=' . CAPTCHA_SERVER_CONTACT . '&response=' . $_POST['g-recaptcha-response'];
     $verifyRecaptcha = curlRequest($googleUrlCatpcha);
@@ -6,30 +10,55 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
     if ($decodeGoogleAnswer["success"]) {
         if (isset($_POST["user_name"]) && isset($_POST["user_mail"]) && isset($_POST["user_message"])) {
             $pseudo =  strip_tags(trim($_POST["user_name"]));
-            $mail = filter_var(strip_tags(trim($_POST["user_mail"])), FILTER_VALIDATE_EMAIL);
+            $userMail = filter_var(strip_tags(trim($_POST["user_mail"])), FILTER_VALIDATE_EMAIL);
             $message =  strip_tags(trim($_POST["user_message"]));
-            if ($pseudo && $mail && $message) {
+            if ($pseudo && $userMail && $message) {
+                $mail = new PHPMailer;
 
-                $toDev      = MAIL;
-                $subjectDev = "Message de " . $pseudo . " | Portfolio";
-                $messageDev = "Mail de l'utilisateur $pseudo : " . $mail . "\n" . $message;
-                $headersToDev =
-                    'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
-                    'From: ' . $mail  . "\r\n" .
-                    'Reply-To: ' . $mail  . "\r\n" .
-                    'X-Mailer: PHP/' . phpversion();
+                $mail->IsSMTP();
+                $mail->Host = "smtp.gmail.com";
+                $mail->SMTPAuth = true;
+                $mail->SMTPSecure = "tls";
+                $mail->Port       = 587;
+                $mail->Username = MAIL;
+                $mail->Password = MDP;
 
-                $toUsers = $mail;
-                $subjectUsers = "Quentin Fayt | Portfolio";
-                $messageUsers = "Merci $pseudo pour votre message!\nJe vous recontacte dans les plus brefs délais!\nBien à vous,\nQuentin Fayt";
-                $headersToUsers =
-                    'Content-Type: text/plain; charset="utf-8"' . "\r\n"  .
-                    'From: ' . MAIL . "\r\n" .
-                    'Reply-To: ' . MAIL . "\r\n" .
-                    'X-Mailer: PHP/' . phpversion();
+                $mail->setFrom(MAIL, 'Quentin');
+                $mail->addAddress($userMail, $pseudo);
+                $mail->CharSet = 'UTF-8';
+                $mail->Subject  = "Message de $pseudo";
+                $mail->Body     = $message;
 
-                mail($toDev, $subjectDev, $messageDev, $headersToDev);
-                mail($toUsers, $subjectUsers, $messageUsers, $headersToUsers);
+                if (!$mail->send()) {
+                    echo 'Message was not sent.';
+                    echo 'Mailer error: ' . $mail->ErrorInfo;
+                } else {
+                    echo 'Message has been sent.';
+                }
+
+                $mail = new PHPMailer;
+
+                $mail->IsSMTP();
+                $mail->Host = "smtp.gmail.com";
+                $mail->SMTPAuth = true;
+                $mail->SMTPSecure = "tls";
+                $mail->Port       = 587;
+                $mail->Username = MAIL;
+                $mail->Password = MDP;
+
+                $mail->setFrom($userMail, $pseudo);
+                $mail->addAddress(MAIL, "Quentin");
+                $mail->CharSet = 'UTF-8';
+
+                $mail->Subject  = "Accusé de réception | Portfolio Quentin Fayt";
+                $mail->Body     = "Merci $pseudo pour votre message!\nJe vous recontacte dans les plus brefs délais!\nBien à vous,\nQuentin Fayt";
+
+                if (!$mail->send()) {
+                    echo 'Message was not sent.';
+                    echo 'Mailer error: ' . $mail->ErrorInfo;
+                } else {
+                    echo 'Message has been sent.';
+                }
             } else {
                 $mailError = true;
             }
