@@ -29,12 +29,13 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
                 $mail->Subject  = "Message de $pseudo";
                 $mail->Body     = $message;
 
-                if (!$mail->send()) {
+                $mail->send();
+                /* if (!$mail->send()) {
                     echo 'Message was not sent.';
                     echo 'Mailer error: ' . $mail->ErrorInfo;
                 } else {
                     echo 'Message has been sent.';
-                }
+                } */
 
                 $mail = new PHPMailer;
 
@@ -53,12 +54,7 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
                 $mail->Subject  = "Accusé de réception | Portfolio Quentin Fayt";
                 $mail->Body     = "Merci $pseudo pour votre message!\nJe vous recontacte dans les plus brefs délais!\nBien à vous,\nQuentin Fayt";
 
-                if (!$mail->send()) {
-                    echo 'Message was not sent.';
-                    echo 'Mailer error: ' . $mail->ErrorInfo;
-                } else {
-                    echo 'Message has been sent.';
-                }
+                $mail->send();
             } else {
                 $mailError = true;
             }
