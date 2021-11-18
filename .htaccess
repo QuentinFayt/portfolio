@@ -2,5 +2,6 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^(projets)($|/) - [L]
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^ /public%{REQUEST_URI} [END]
