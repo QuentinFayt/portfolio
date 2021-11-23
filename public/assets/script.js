@@ -130,7 +130,7 @@ if (document.querySelector(".portGuestBookContainer")) {
     rotateWheel();
   }
   changeCarousel();
-
+  /*Realised with the help of this tutorial : https://3dtransforms.desandro.com/carousel*/
   /*=============================Scroll Direction=============================*/
   document.onmousewheel = function (e) {
     directionProcess(mouseWheelDirection(e));
